@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="JAGANNATHCRAFATE - Vibrant handcrafted Jagannath art, idols, crafts and devotional creations.">
+<title>JAGANNATHCRAFATE | Divine Art & Craft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#e63946; --yellow:#ffbd00; --blue:#1769aa; --green:#159947;
+  --ink:#24130e; --cream:#fff9ed; --card:#ffffff; --orange:#f26b21;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer;border:0}
+.topbar{background:#1d0f0b;color:#fff;padding:8px 5%;font-size:13px;text-align:center}
+nav{position:sticky;top:0;z-index:50;background:rgba(255,249,237,.94);backdrop-filter:blur(12px);border-bottom:1px solid #f1d8b5}
+.nav-inner{max-width:1180px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:"Baloo 2";font-weight:800;font-size:25px;color:var(--red);letter-spacing:.5px}
+.brand span{color:var(--blue)}
+.navlinks{display:flex;gap:22px;font-size:14px;font-weight:600}
+.navlinks a:hover{color:var(--red)}
+.cart{background:var(--red);color:#fff;padding:10px 15px;border-radius:30px;font-weight:700}
+.hero{min-height:650px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px 100px;overflow:hidden;
+background:radial-gradient(circle at 50% 25%,#fff7cf 0 13%,transparent 30%),linear-gradient(135deg,#fff3c4,#ffd9c5 45%,#cdeaff)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.65}
+.hero:before{width:300px;height:300px;background:#ffcf33;left:-100px;top:50px}
+.hero:after{width:260px;height:260px;background:#6ed7a0;right:-80px;bottom:40px}
+.hero-content{max-width:850px;position:relative;z-index:4}
+.badge{display:inline-block;background:#fff;border:2px solid var(--yellow);padding:8px 17px;border-radius:30px;font-size:13px;font-weight:700;color:#7d3e00;margin-bottom:17px}
+h1{font-family:"Baloo 2";font-size:clamp(45px,8vw,88px);line-height:.9;color:var(--red);text-shadow:4px 5px 0 #fff}
+h1 span{color:var(--blue)}
+.hero p{max-width:680px;margin:22px auto;color:#4e3026;font-size:17px}
+.cta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{padding:13px 22px;border-radius:30px;font-weight:700;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 20px #0001}
+.primary{background:var(--red);color:#fff}.secondary{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.idols{position:absolute;z-index:3;left:50%;top:34px;transform:translateX(-50%);width:min(430px,85vw);height:230px;pointer-events:none}
+.idol{position:absolute;bottom:0;animation:float 4s ease-in-out infinite}
+.idol svg{filter:drop-shadow(0 10px 9px #5d271444)}
+.jag{left:50%;transform:translateX(-50%);width:165px}
+.bal{left:4%;width:120px;animation-delay:-1s}.sub{right:4%;width:120px;animation-delay:-2s}
+@keyframes float{50%{transform:translateY(-12px) translateX(-50%)}}
+.bal{animation-name:floatSide}.sub{animation-name:floatSide}
+@keyframes floatSide{50%{transform:translateY(-14px)}}
+.section{max-width:1180px;margin:auto;padding:75px 20px}
+.section-title{text-align:center;margin-bottom:38px}
+.section-title h2{font-family:"Baloo 2";font-size:42px;color:var(--blue)}
+.section-title p{color:#76584d}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{padding:25px;border-radius:22px;text-align:center;color:#fff;box-shadow:0 12px 25px #00000012;transition:.25s}
+.cat:hover{transform:translateY(-7px)} .cat:nth-child(1){background:var(--red)} .cat:nth-child(2){background:var(--blue)} .cat:nth-child(3){background:var(--green)} .cat:nth-child(4){background:var(--orange)}
+.cat .icon{font-size:40px;margin-bottom:8px}.cat h3{font-family:"Baloo 2";font-size:24px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.product{background:#fff;border-radius:24px;overflow:hidden;border:1px solid #f0dfcb;box-shadow:0 12px 30px #63301712;transition:.25s;position:relative}
+.product:hover{transform:translateY(-7px)}
+.product-art{height:200px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff0b8,#ffd5d5)}
+.product-art .symbol{font-size:80px;filter:drop-shadow(0 8px 6px #0002)}
+.product-info{padding:17px}.product-info h3{font-size:17px}.product-info p{font-size:12px;color:#81675d;margin:6px 0 13px}
+.price{font-size:19px;font-weight:800;color:var(--red)}
+.order{float:right;background:var(--blue);color:#fff;border-radius:20px;padding:8px 12px;font-size:12px;font-weight:700}
+.about{background:#fff3d8;border-radius:32px;padding:40px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.about h2{font-family:"Baloo 2";font-size:40px;color:var(--red)}.about p{line-height:1.8;color:#5e443a}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.feature{background:#fff;padding:15px;border-radius:16px;font-weight:600;font-size:13px}
+.contact{background:#20110d;color:#fff}
+.contact .section-title h2{color:#ffca28}.contact .section-title p{color:#e7cfc4}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:#2d1913;border:1px solid #5b382c;padding:28px;border-radius:24px}
+.contact-card h3{font-family:"Baloo 2";font-size:28px;color:#fff}
+.contact-line{padding:12px 0;border-bottom:1px solid #523228;font-size:14px}.contact-line:last-child{border:0}
+.order-box{background:linear-gradient(135deg,#e63946,#f26b21);padding:28px;border-radius:24px}
+.order-box h3{font-family:"Baloo 2";font-size:30px}.order-box p{margin:8px 0 20px}
+footer{background:#120907;color:#c9aaa0;text-align:center;padding:22px;font-size:12px}
+.floating-order{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:800;box-shadow:0 10px 25px #0003}
+@media(max-width:850px){.navlinks{display:none}.categories,.products{grid-template-columns:repeat(2,1fr)}.about,.contact-grid{grid-template-columns:1fr}.hero{min-height:700px;padding-top:170px}.idols{top:20px}}
+@media(max-width:520px){.categories,.products{grid-template-columns:1fr}.section{padding:55px 15px}.about{padding:25px}.features{grid-template-columns:1fr}.brand{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="topbar">✨ Handcrafted with devotion • Vibrant Jagannath Art & Craft • Made with love</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#home">JAGANNATH<span>CRAFATE</span></a>
+    <div class="navlinks">
+      <a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Collection</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </div>
+    <a class="cart" href="#contact">🛒 Order</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="idols" aria-label="Jagannath, Balabhadra and Subhadra decorative illustration">
+    <div class="idol bal">
+      <svg viewBox="0 0 120 150"><circle cx="60" cy="67" r="48" fill="#fff"/><circle cx="60" cy="67" r="44" fill="#f7f7f7" stroke="#1769aa" stroke-width="7"/><circle cx="43" cy="62" r="9" fill="#111"/><circle cx="77" cy="62" r="9" fill="#111"/><circle cx="43" cy="62" r="3" fill="#fff"/><circle cx="77" cy="62" r="3" fill="#fff"/><path d="M42 85 Q60 100 78 85" fill="none" stroke="#1769aa" stroke-width="7" stroke-linecap="round"/><rect x="26" y="110" width="68" height="25" rx="10" fill="#1769aa"/></svg>
+    </div>
+    <div class="idol jag">
+      <svg viewBox="0 0 165 180"><circle cx="82" cy="72" r="61" fill="#111"/><circle cx="59" cy="67" r="17" fill="#fff"/><circle cx="106" cy="67" r="17" fill="#fff"/><circle cx="59" cy="67" r="8" fill="#e63946"/><circle cx="106" cy="67" r="8" fill="#e63946"/><path d="M47 101 Q82 122 118 101" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M82 10 L82 28 M72 18 L92 18" stroke="#e63946" stroke-width="8" stroke-linecap="round"/><rect x="28" y="130" width="109" height="34" rx="12" fill="#e63946"/></svg>
+    </div>
+    <div class="idol sub">
+      <svg viewBox="0 0 120 150"><circle cx="60" cy="67" r="48" fill="#e63946"/><circle cx="60" cy="67" r="44" fill="#e63946" stroke="#ffbd00" stroke-width="7"/><circle cx="43" cy="62" r="9" fill="#111"/><circle cx="77" cy="62" r="9" fill="#111"/><circle cx="43" cy="62" r="3" fill="#fff"/><circle cx="77" cy="62" r="3" fill="#fff"/><path d="M42 85 Q60 100 78 85" fill="none" stroke="#ffbd00" stroke-width="7" stroke-linecap="round"/><rect x="26" y="110" width="68" height="25" rx="10" fill="#ffbd00"/></svg>
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="badge">🪷 DIVINE • HANDCRAFTED • UNIQUE</div>
+    <h1>JAGANNATH<span>CRAFATE</span></h1>
+    <p>Bring the vibrant spirit of Lord Jagannath, Balabhadra and Subhadra into your home with colourful handcrafted art, idols, décor and devotional creations.</p>
+    <div class="cta"><a class="btn primary" href="#products">✨ Explore Collection</a><a class="btn secondary" href="#contact">📞 Order Now</a></div>
+  </div>
+</header>
+
+<section class="section" id="categories">
+  <div class="section-title"><h2>Explore Our Categories</h2><p>Choose a colourful creation that speaks to your heart.</p></div>
+  <div class="categories">
+    <a class="cat" href="#products"><div class="icon">🪔</div><h3>Divine Idols</h3><p>Jagannath family inspired idols</p></a>
+    <a class="cat" href="#products"><div class="icon">🎨</div><h3>Wall Art</h3><p>Vibrant devotional artwork</p></a>
+    <a class="cat" href="#products"><div class="icon">🌸</div><h3>Home Décor</h3><p>Colourful spiritual accents</p></a>
+    <a class="cat" href="#products"><div class="icon">🎁</div><h3>Gift Crafts</h3><p>Special handmade gifting ideas</p></a>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="section-title"><h2>Featured Creations</h2><p>Sample products — replace the artwork, prices and descriptions with your real catalogue.</p></div>
+  <div class="products">
+    <article class="product"><div class="product-art"><div class="symbol">🛕</div></div><div class="product-info"><h3>Jagannath Divine Set</h3><p>Jagannath • Balabhadra • Subhadra inspired décor set.</p><span class="price">₹999</span><a class="order" href="#contact">Order</a></div></article>
+    <article class="product"><div class="product-art"><div class="symbol">🎨</div></div><div class="product-info"><h3>Colourful Wall Art</h3><p>Bright devotional artwork for your special space.</p><span class="price">₹699</span><a class="order" href="#contact">Order</a></div></article>
+    <article class="product"><div class="product-art"><div class="symbol">🪷</div></div><div class="product-info"><h3>Festival Décor</h3><p>Festive handcrafted accent for celebrations.</p><span class="price">₹499</span><a class="order" href="#contact">Order</a></div></article>
+    <article class="product"><div class="product-art"><div class="symbol">🎁</div></div><div class="product-info"><h3>Devotional Gift Box</h3><p>A colourful handmade gift for family and friends.</p><span class="price">₹799</span><a class="order" href="#contact">Order</a></div></article>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="about">
+    <div><h2>Crafted with Devotion ❤️</h2><p>JAGANNATHCRAFATE is a creative craft brand focused on vibrant devotional-inspired art and handmade décor. Our goal is to make every piece feel joyful, artistic and special — whether it is for your home, a festival, a gift or your collection.</p>
+      <div class="features"><div class="feature">✨ Unique Designs</div><div class="feature">🖐️ Handmade Feel</div><div class="feature">🎨 Vibrant Colours</div><div class="feature">📦 Order Support</div></div>
+    </div>
+    <div style="text-align:center;font-size:120px">🛕<br><span style="font-family:'Baloo 2';font-size:28px;color:#1769aa">Art • Faith • Craft</span></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section">
+    <div class="section-title"><h2>Let's Create Something Beautiful</h2><p>Contact JAGANNATHCRAFATE for orders and enquiries.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Contact Details</h3>
+        <div class="contact-line">👤 <b>Name:</b> JITENDRA</div>
+        <div class="contact-line">📧 <b>Email:</b> <a href="mailto:jitendra020608@gmail.com">jitendra020608@gmail.com</a></div>
+        <div class="contact-line">📱 <b>Mobile:</b> <a href="tel:+919012862109">+91 9012862109</a></div>
+        <div class="contact-line">📍 <b>Address:</b> JHAJAR BYPASS Road, Dankaur, Gautam Buddha Nagar, Greater Noida, PIN 203201</div>
+      </div>
+      <div class="order-box">
+        <h3>Ready to Order?</h3>
+        <p>Tell us which creation you like and we can discuss availability, customisation and delivery.</p>
+        <a class="btn" style="background:#fff;color:#159947" href="https://wa.me/919012862109?text=Hello%20JAGANNATHCRAFATE%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+        <a class="btn" style="background:#fff;color:#e63946;margin-top:10px" href="mailto:jitendra020608@gmail.com?subject=JAGANNATHCRAFATE%20Order%20Enquiry">📧 Send Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="floating-order" href="https://wa.me/919012862109?text=Hello%20JAGANNATHCRAFATE%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">💬 Order Now</a>
+
+<footer>© 2026 JAGANNATHCRAFATE • Divine Art & Craft • Designed for GitHub Pages</footer>
+</body>
+</html>
