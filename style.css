@@ -130,3 +130,15 @@ footer{background:#170b1d;color:#d8cadd;padding:28px 0}
   .section{padding:70px 0}.order-form{padding:22px}
   .floating-whatsapp{right:14px;bottom:14px}
 }
+.blur-load {
+    filter: blur(15px);
+    opacity: 0;
+    transform: scale(1.03);
+    transition: filter 1.2s ease, opacity 1s ease, transform 1.2s ease;
+}
+
+.blur-load.loaded {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+}
