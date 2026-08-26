@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Festival Decor | JAGANNATHCRAFATE</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, #fff3e0, #fce4ec, #e8eaf6);
+      overflow-x: hidden;
+    }
+
+    .page {
+      padding: 50px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: clamp(35px, 7vw, 55px);
+      color: #e65100;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 80%;
+      max-width: 550px;
+      border-radius: 20px;
+      transition: 0.5s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card img:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    .card h2 {
+      color: #7b1fa2;
+      font-size: 30px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px 10px;
+      padding: 14px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.4s;
+    }
+
+    .home-btn {
+      background: #7b1fa2;
+    }
+
+    .order-btn {
+      background: #e65100;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* Floating icons */
+
+    .floating {
+      position: fixed;
+      font-size: 38px;
+      animation: float 4s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .one {
+      top: 12%;
+      left: 7%;
+    }
+
+    .two {
+      top: 28%;
+      right: 7%;
+      animation-delay: 1s;
+    }
+
+    .three {
+      bottom: 20%;
+      left: 10%;
+      animation-delay: 2s;
+    }
+
+    .four {
+      bottom: 12%;
+      right: 12%;
+      animation-delay: 3s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-25px) rotate(12deg);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 30px 15px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .card img {
+        width: 100%;
+      }
+
+      .floating {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating colourful festival icons -->
+
+  <div class="floating one">🌺</div>
+  <div class="floating two">✨</div>
+  <div class="floating three">🪔</div>
+  <div class="floating four">🌸</div>
+
+  <div class="page">
+
+    <h1>🌺 Festival Decor</h1>
+
+    <p class="subtitle">
+      JAGANNATHCRAFATE • Handmade • Creative • Colourful
+    </p>
+
+    <div class="card">
+
+      <!-- Festival image -->
+      <img
+        src="images/teej-festival-card.jpg"
+        alt="Handmade Festival Decoration">
+
+      <h2>Beautiful Festival Decorations</h2>
+
+      <p>
+        Explore our creative handmade festival decorations,
+        greeting cards, rangoli-style artwork, stage décor,
+        themed displays and beautiful festive crafts.
+      </p>
+
+      <p>
+        ✨ Designed creatively<br>
+        🌸 Handmade with care<br>
+        🪔 Customised according to your requirement
+      </p>
+
+      <!-- Buttons -->
+
+      <a href="index.html" class="btn home-btn">
+        🏠 Back to Home
+      </a>
+
+      <a href="index.html#order" class="btn order-btn">
+        ✨ Order This Category
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+  </html>
