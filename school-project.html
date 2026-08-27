@@ -267,13 +267,64 @@
       </p>
 
       <!-- Project categories -->
+<a href="science-projects.html" class="project-link">
+  <div class="project-box science-box">
+    <div class="project-icon">🔬</div>
+    <h3>Science Projects</h3>
+    <p>
+      Working models, experiments, environment,
+      biology, physics and chemistry concepts.
+    </p>
+    <span class="enter-project">Explore Projects →</span>
+  </div>
+</a>
 
-      <div class="project-grid">
+<style>
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
-        <div class="project-box">
-          <div class="project-icon">🔬</div>
-          <h3>Science Projects</h3>
-          <p>
+.science-box {
+  cursor: pointer;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.science-box::before {
+  content: "⚛️";
+  position: absolute;
+  font-size: 90px;
+  right: -15px;
+  top: -25px;
+  opacity: 0.08;
+  transform: rotate(15deg);
+}
+
+.science-box:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+.project-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.enter-project {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 9px 18px;
+  border-radius: 25px;
+  background: #ffffff;
+  color: #1769aa;
+  font-weight: bold;
+  font-size: 14px;
+}
+</style>
+          
             Working models, experiments, environment,
             biology, physics and chemistry concepts.
           </p>
