@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>School Projects | JAGANNATHCRAFATE</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, #e3f2fd, #f3e5f5, #fff8e1);
+      overflow-x: hidden;
+    }
+
+    .page {
+      padding: 35px 15px 60px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Header */
+
+    .brand {
+      font-size: 18px;
+      font-weight: bold;
+      color: #7b1fa2;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 8vw, 60px);
+      margin: 15px 0 10px;
+      background: linear-gradient(90deg, #1565c0, #7b1fa2, #e65100);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    /* Main card */
+
+    .card {
+      width: min(950px, 94%);
+      margin: auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.93);
+      border-radius: 30px;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(10px);
+    }
+
+    .main-image {
+      width: min(600px, 100%);
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 25px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+      transition: 0.6s ease;
+    }
+
+    .main-image:hover {
+      transform: scale(1.04) rotate(1deg);
+    }
+
+    .card h2 {
+      color: #1565c0;
+      font-size: 32px;
+      margin-top: 30px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    /* Project categories */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin: 30px 0;
+    }
+
+    .project-box {
+      padding: 22px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #ffffff, #f5f5f5);
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.10);
+      transition: 0.4s;
+    }
+
+    .project-box:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+    }
+
+    .project-icon {
+      font-size: 40px;
+    }
+
+    .project-box h3 {
+      color: #7b1fa2;
+      margin: 10px 0;
+    }
+
+    .project-box p {
+      font-size: 15px;
+      margin: 0;
+    }
+
+    /* Buttons */
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 8px;
+      padding: 15px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.4s;
+    }
+
+    .home-btn {
+      background: #7b1fa2;
+    }
+
+    .order-btn {
+      background: #1565c0;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+    }
+
+    /* Floating icons */
+
+    .floating {
+      position: fixed;
+      font-size: 38px;
+      pointer-events: none;
+      z-index: 1;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .one {
+      top: 12%;
+      left: 5%;
+    }
+
+    .two {
+      top: 25%;
+      right: 6%;
+      animation-delay: 1s;
+    }
+
+    .three {
+      bottom: 20%;
+      left: 7%;
+      animation-delay: 2s;
+    }
+
+    .four {
+      bottom: 10%;
+      right: 10%;
+      animation-delay: 3s;
+    }
+
+    .five {
+      top: 55%;
+      left: 3%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-25px) rotate(12deg);
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 650px) {
+      .card {
+        padding: 20px 15px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card h2 {
+        font-size: 27px;
+      }
+
+      .card p {
+        font-size: 16px;
+      }
+
+      .floating {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating educational icons -->
+
+  <div class="floating one">📚</div>
+  <div class="floating two">✏️</div>
+  <div class="floating three">🔬</div>
+  <div class="floating four">📐</div>
+  <div class="floating five">🎨</div>
+
+  <div class="page">
+
+    <div class="brand">
+      JAGANNATHCRAFATE
+    </div>
+
+    <h1>📚 School Projects</h1>
+
+    <p class="subtitle">
+      Creative • Educational • Handmade • Presentation Ready
+    </p>
+
+    <div class="card">
+
+      <!-- Main project image -->
+
+      <img
+        class="main-image"
+        src="images/cardboard-craft-model.jpg"
+        alt="Handmade School Project Model">
+
+      <h2>Creative School Project Studio</h2>
+
+      <p>
+        We create colourful and creative school projects,
+        charts, working models, 3D models and exhibition
+        displays according to the class, subject and topic.
+      </p>
+
+      <!-- Project categories -->
+
+      <div class="project-grid">
+
+        <div class="project-box">
+          <div class="project-icon">🔬</div>
+          <h3>Science Projects</h3>
+          <p>
+            Working models, experiments, environment,
+            biology, physics and chemistry concepts.
+          </p>
+        </div>
+
+        <div class="project-box">
+          <div class="project-icon">🌍</div>
+          <h3>SST & Geography</h3>
+          <p>
+            Maps, landforms, monuments, settlements,
+            cultural displays and 3D models.
+          </p>
+        </div>
+
+        <div class="project-box">
+          <div class="project-icon">📐</div>
+          <h3>Maths Projects</h3>
+          <p>
+            Geometry, mensuration, graphs, data
+            handling and activity-based models.
+          </p>
+        </div>
+
+        <div class="project-box">
+          <div class="project-icon">💻</div>
+          <h3>Computer & AI</h3>
+          <p>
+            Computer concepts, artificial intelligence,
+            flowcharts and technology displays.
+          </p>
+        </div>
+
+        <div class="project-box">
+          <div class="project-icon">🎨</div>
+          <h3>Charts & Posters</h3>
+          <p>
+            Attractive educational charts, posters
+            and presentation boards.
+          </p>
+        </div>
+
+        <div class="project-box">
+          <div class="project-icon">🏆</div>
+          <h3>Exhibition Projects</h3>
+          <p>
+            Creative models and displays for school
+            exhibitions and competitions.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Buttons -->
+
+      <div class="buttons">
+
+        <a href="index.html" class="btn home-btn">
+          🏠 Back to Home
+        </a>
+
+        <a href="index.html#order" class="btn order-btn">
+          ✨ Order School Project
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+  </html>
