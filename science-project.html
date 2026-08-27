@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Creative Science Projects - Working Models, Experiments, Physics, Chemistry, Biology and Environmental Projects">
+
+  <meta name="keywords"
+        content="science projects, school science projects, working models, physics, chemistry, biology, environment">
+
+  <meta name="author"
+        content="JAGANNATH CRAFATE">
+
+  <title>Science Projects | JAGANNATH CRAFATE</title>
+
+
+  <style>
+
+    /* =========================
+       BASIC SETTINGS
+    ========================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        linear-gradient(135deg, #eaf8ff, #ffffff, #effffb);
+      color: #17324d;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .science-header {
+
+      position: relative;
+
+      overflow: hidden;
+
+      text-align: center;
+
+      color: white;
+
+      padding: 55px 20px 65px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #004aad,
+          #0077cc,
+          #00a6a6
+        );
+
+      box-shadow:
+        0 8px 30px rgba(0,0,0,0.18);
+    }
+
+
+    .science-header::before {
+
+      content: "⚛";
+
+      position: absolute;
+
+      font-size: 180px;
+
+      left: -30px;
+
+      top: -55px;
+
+      opacity: 0.08;
+    }
+
+
+    .science-header::after {
+
+      content: "🧬";
+
+      position: absolute;
+
+      font-size: 170px;
+
+      right: -30px;
+
+      bottom: -55px;
+
+      opacity: 0.08;
+    }
+
+
+    .science-logo {
+
+      font-size: 68px;
+
+      letter-spacing: 8px;
+
+      margin-bottom: 12px;
+
+      animation:
+        floatingScience 3s ease-in-out infinite;
+    }
+
+
+    @keyframes floatingScience {
+
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-9px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+
+    }
+
+
+    .science-header h1 {
+
+      font-size: 42px;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 10px;
+
+      text-shadow:
+        0 3px 8px rgba(0,0,0,0.25);
+    }
+
+
+    .science-header p {
+
+      max-width: 800px;
+
+      margin: auto;
+
+      font-size: 17px;
+
+      opacity: 0.95;
+    }
+
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    .top-navigation {
+
+      text-align: center;
+
+      padding: 20px;
+    }
+
+
+    .back-button {
+
+      display: inline-block;
+
+      text-decoration: none;
+
+      color: white;
+
+      background: #17324d;
+
+      padding: 11px 23px;
+
+      border-radius: 30px;
+
+      font-weight: bold;
+
+      box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+
+      transition: all 0.3s ease;
+    }
+
+
+    .back-button:hover {
+
+      transform: translateY(-3px);
+
+      background: #0066cc;
+
+      box-shadow:
+        0 8px 20px rgba(0,0,0,0.20);
+    }
+
+
+    /* =========================
+       INTRODUCTION
+    ========================= */
+
+    .intro-section {
+
+      max-width: 900px;
+
+      margin: 10px auto 35px;
+
+      padding: 20px;
+
+      text-align: center;
+    }
+
+
+    .intro-section h2 {
+
+      color: #0066cc;
+
+      font-size: 31px;
+
+      margin-bottom: 12px;
+    }
+
+
+    .intro-section p {
+
+      color: #536573;
+
+      font-size: 16px;
+
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       SCIENCE CATEGORIES
+    ========================= */
+
+    .section-title {
+
+      text-align: center;
+
+      color: #0066cc;
+
+      font-size: 30px;
+
+      margin: 35px 0 20px;
+    }
+
+
+    .category-container {
+
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding: 20px;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(220px, 1fr)
+        );
+
+      gap: 23px;
+    }
+
+
+    .category-card {
+
+      background: white;
+
+      border-radius: 22px;
+
+      padding: 28px 20px;
+
+      text-align: center;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.10);
+
+      border-top: 5px solid #0066cc;
+
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+    }
+
+
+    .category-card:hover {
+
+      transform: translateY(-9px);
+
+      box-shadow:
+        0 16px 35px rgba(0,0,0,0.16);
+    }
+
+
+    .category-icon {
+
+      font-size: 55px;
+
+      margin-bottom: 10px;
+    }
+
+
+    .category-card h3 {
+
+      color: #0066cc;
+
+      font-size: 21px;
+
+      margin-bottom: 8px;
+    }
+
+
+    .category-card p {
+
+      color: #596b78;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       FEATURED PROJECTS
+    ========================= */
+
+    .projects-section {
+
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding: 10px 20px 30px;
+    }
+
+
+    .project-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(270px, 1fr)
+        );
+
+      gap: 25px;
+    }
+
+
+    .project-card {
+
+      position: relative;
+
+      overflow: hidden;
+
+      background: white;
+
+      border-radius: 22px;
+
+      padding: 27px;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.10);
+
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+    }
+
+
+    .project-card::before {
+
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 5px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #0066cc,
+          #00a6a6
+        );
+    }
+
+
+    .project-card:hover {
+
+      transform: translateY(-9px);
+
+      box-shadow:
+        0 17px 38px rgba(0,0,0,0.16);
+    }
+
+
+    .project-number {
+
+      position: absolute;
+
+      top: 12px;
+
+      right: 16px;
+
+      font-size: 43px;
+
+      font-weight: bold;
+
+      color: #0066cc;
+
+      opacity: 0.08;
+    }
+
+
+    .project-icon {
+
+      font-size: 50px;
+
+      margin-bottom: 10px;
+    }
+
+
+    .project-card h3 {
+
+      color: #008080;
+
+      font-size: 21px;
+
+      margin-bottom: 9px;
+    }
+
+
+    .project-card p {
+
+      color: #596b78;
+
+      font-size: 14px;
+
+      min-height: 88px;
+    }
+
+
+    .view-button {
+
+      display: inline-block;
+
+      margin-top: 15px;
+
+      padding: 10px 18px;
+
+      background: #0066cc;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 25px;
+
+      font-size: 14px;
+
+      font-weight: bold;
+
+      transition: 0.3s;
+    }
+
+
+    .view-button:hover {
+
+      background: #00a6a6;
+
+      transform: scale(1.04);
+    }
+
+
+    /* =========================
+       INNOVATION SECTION
+    ========================= */
+
+    .innovation-section {
+
+      max-width: 1000px;
+
+      margin: 40px auto;
+
+      padding: 35px 25px;
+
+      text-align: center;
+
+      background: white;
+
+      border-radius: 25px;
+
+      box-shadow:
+        0 8px 28px rgba(0,0,0,0.10);
+    }
+
+
+    .innovation-section h2 {
+
+      color: #0066cc;
+
+      font-size: 29px;
+
+      margin-bottom: 12px;
+    }
+
+
+    .innovation-section p {
+
+      color: #596b78;
+
+      max-width: 800px;
+
+      margin: auto;
+
+      line-height: 1.8;
+    }
+
+
+    .innovation-icons {
+
+      margin-top: 22px;
+
+      font-size: 42px;
+
+      letter-spacing: 15px;
+    }
+
+
+    /* =========================
+       WHY SCIENCE PROJECTS
+    ========================= */
+
+    .why-section {
+
+      max-width: 900px;
+
+      margin: 40px auto 55px;
+
+      padding: 30px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.10);
+    }
+
+
+    .why-section h2 {
+
+      text-align: center;
+
+      color: #0066cc;
+
+      margin-bottom: 15px;
+    }
+
+
+    .why-section ul {
+
+      list-style: none;
+    }
+
+
+    .why-section li {
+
+      padding: 9px 0;
+
+      border-bottom:
+        1px solid #edf2f5;
+
+      color: #4f626f;
+    }
+
+
+    .why-section li:last-child {
+
+      border-bottom: none;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+      background: #17324d;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 30px 15px;
+    }
+
+
+    footer .brand {
+
+      font-size: 21px;
+
+      font-weight: bold;
+
+      color: #6dd5ed;
+
+      margin-bottom: 7px;
+    }
+
+
+    footer p {
+
+      font-size: 14px;
+
+      margin: 4px 0;
+
+      opacity: 0.9;
+    }
+
+
+    /* =========================
+       MOBILE DESIGN
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      .science-header {
+
+        padding: 40px 15px 50px;
+      }
+
+
+      .science-logo {
+
+        font-size: 48px;
+
+        letter-spacing: 3px;
+      }
+
+
+      .science-header h1 {
+
+        font-size: 29px;
+      }
+
+
+      .science-header p {
+
+        font-size: 14px;
+      }
+
+
+      .intro-section h2 {
+
+        font-size: 25px;
+      }
+
+
+      .section-title {
+
+        font-size: 25px;
+      }
+
+
+      .innovation-icons {
+
+        font-size: 32px;
+
+        letter-spacing: 7px;
+      }
+
+
+      .project-card p {
+
+        min-height: auto;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================
+       SCIENCE HEADER
+  ====================================== -->
+
+  <header class="science-header">
+
+    <div class="science-logo">
+      🔬 ⚛️ 🧪 🧬
+    </div>
+
+    <h1>
+      SCIENCE PROJECTS
+    </h1>
+
+    <p>
+      Explore creative working models, experiments,
+      innovative ideas and real-world problem-solving
+      projects for young scientists.
+    </p>
+
+  </header>
+
+
+  <!-- =====================================
+       BACK BUTTON
+  ====================================== -->
+
+  <div class="top-navigation">
+
+    <a
+      href="school-project.html"
+      class="back-button">
+
+      ← Back to School Projects
+
+    </a>
+
+  </div>
+
+
+  <!-- =====================================
+       INTRODUCTION
+  ====================================== -->
+
+  <section class="intro-section">
+
+    <h2>
+      🌍 Explore the World of Science
+    </h2>
+
+    <p>
+      Science is not only about reading concepts.
+      It is about observing, experimenting, creating
+      and solving real-life problems. Explore our
+      collection of creative school science projects
+      designed to make learning interesting and practical.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================
+       SCIENCE CATEGORIES
+  ====================================== -->
+
+  <h2 class="section-title">
+    🧪 Explore Science Categories
+  </h2>
+
+
+  <section class="category-container">
+
+
+    <!-- PHYSICS -->
+
+    <div class="category-card">
+
+      <div class="category-icon">
+        ⚡
+      </div>
+
+      <h3>
+        Physics
+      </h3>
+
+      <p>
+        Force, motion, electricity, magnetism,
+        light, sound, energy and mechanical
+        working models.
+      </p>
+
+    </div>
+
+
+    <!-- CHEMISTRY -->
+
+    <div class="category-card">
+
+      <div class="category-icon">
+        🧪
+      </div>
+
+      <h3>
+        Chemistry
+      </h3>
+
+      <p>
+        Safe classroom experiments, materials,
+        chemical changes, reactions and
+        everyday chemistry.
+      </p>
+
+    </div>
+
+
+    <!-- BIOLOGY -->
+
+    <div class="category-card">
+
+      <div class="category-icon">
+        🧬
+      </div>
+
+      <h3>
+        Biology
+      </h3>
+
+      <p>
+        Human body, plants, microorganisms,
+        ecosystems and fascinating life-science
+        models.
+      </p>
+
+    </div>
+
+
+    <!-- ENVIRONMENT -->
+
+    <div class="category-card">
+
+      <div class="category-icon">
+        🌱
+      </div>
+
+      <h3>
+        Environment
+      </h3>
+
+      <p>
+        Recycling, pollution control, water
+        conservation, waste management and
+        sustainability.
+      </p>
+
+    </div>
+
+
+    <!-- ASTRONOMY -->
+
+    <div class="category-card">
+
+      <div class="category-icon">
+        🚀
+      </div>
+
+      <h3>
+        Space & Astronomy
+      </h3>
+
+      <p>
+        Solar system, planets, satellites,
+        space exploration and astronomical
+        concepts.
+      </p>
+
+    </div>
+
+
+    <!-- TECHNOLOGY -->
+
+    <div class="category-card">
+
+      <div class="category-icon">
+        🤖
+      </div>
+
+      <h3>
+        Science & Technology
+      </h3>
+
+      <p>
+        Robotics, smart systems, innovation,
+        simple automation and technology-based
+        working models.
+      </p>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- =====================================
+       FEATURED PROJECTS
+  ====================================== -->
+
+  <h2 class="section-title">
+    🚀 Featured Science Projects
+  </h2>
+
+
+  <section class="projects-section">
+
+    <div class="project-grid">
+
+
+      <!-- PROJECT 01 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          01
+        </span>
+
+        <div class="project-icon">
+          🌊
+        </div>
+
+        <h3>
+          Plastic Waste Flood Barrier
+        </h3>
+
+        <p>
+          A creative environmental model showing
+          how selected plastic waste can be reused
+          in a flood-protection concept.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 02 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          02
+        </span>
+
+        <div class="project-icon">
+          💧
+        </div>
+
+        <h3>
+          Waste to Water
+        </h3>
+
+        <p>
+          Explore a model demonstrating water
+          conservation, filtration concepts and
+          responsible waste management.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 03 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          03
+        </span>
+
+        <div class="project-icon">
+          ♻️
+        </div>
+
+        <h3>
+          Food Waste Composting Tower
+        </h3>
+
+        <p>
+          A model demonstrating how biodegradable
+          kitchen waste can be processed into
+          useful compost.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 04 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          04
+        </span>
+
+        <div class="project-icon">
+          ☀️
+        </div>
+
+        <h3>
+          Solar Energy Model
+        </h3>
+
+        <p>
+          Learn about solar energy and understand
+          how sunlight can be converted into useful
+          electrical energy.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 05 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          05
+        </span>
+
+        <div class="project-icon">
+          🌧️
+        </div>
+
+        <h3>
+          Rainwater Harvesting
+        </h3>
+
+        <p>
+          A working concept demonstrating the
+          collection, storage and conservation
+          of rainwater.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 06 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          06
+        </span>
+
+        <div class="project-icon">
+          🧲
+        </div>
+
+        <h3>
+          Magnetism Explorer
+        </h3>
+
+        <p>
+          Explore magnetic attraction, repulsion
+          and magnetic-field concepts through
+          an interactive model.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 07 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          07
+        </span>
+
+        <div class="project-icon">
+          🌬️
+        </div>
+
+        <h3>
+          Wind Energy Model
+        </h3>
+
+        <p>
+          Understand the basic concept of wind
+          energy and how moving air can be used
+          to produce useful energy.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 08 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          08
+        </span>
+
+        <div class="project-icon">
+          🌳
+        </div>
+
+        <h3>
+          Smart Green City
+        </h3>
+
+        <p>
+          An environmental model combining
+          greenery, waste management, renewable
+          energy and sustainable development.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 09 -->
+
+      <div class="project-card">
+
+        <span class="project-number">
+          09
+        </span>
+
+        <div class="project-icon">
+          🤖
+        </div>
+
+        <h3>
+          Smart Automatic System
+        </h3>
+
+        <p>
+          A technology-based concept showing how
+          sensors and automation can help solve
+          everyday problems.
+        </p>
+
+        <a
+          href="#"
+          class="view-button">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       INNOVATION
+  ====================================== -->
+
+  <section class="innovation-section">
+
+    <h2>
+      💡 Imagine • Experiment • Innovate
+    </h2>
+
+    <p>
+      Great science projects begin with a question.
+      Observe a problem, think of a solution, create
+      a model, test your idea and improve it.
+      Every experiment is an opportunity to learn.
+    </p>
+
+    <div class="innovation-icons">
+      🔬 ⚡ 🌱 💧 🚀 🤖
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       WHY SCIENCE PROJECTS
+  ====================================== -->
+
+  <section class="why-section">
+
+    <h2>
+      🌟 Why Make Science Projects?
+    </h2>
+
+    <ul>
+
+      <li>
+        💡 Develops creativity and innovative thinking
+      </li>
+
+      <li>
+        🔎 Encourages observation and scientific thinking
+      </li>
+
+      <li>
+        🛠️ Promotes practical learning by doing
+      </li>
+
+      <li>
+        🌍 Helps students understand real-world problems
+      </li>
+
+      <li>
+        ♻️ Encourages environmental responsibility
+      </li>
+
+      <li>
+        🧠 Develops problem-solving skills
+      </li>
+
+      <li>
+        🏆 Useful for school exhibitions and competitions
+      </li>
+
+      <li>
+        🚀 Encourages students to become young innovators
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+  <footer>
+
+    <div class="brand">
+      🔬 JAGANNATH CRAFATE
+    </div>
+
+    <p>
+      Creative Science • Art & Craft • Educational Models
+    </p>
+
+    <p>
+      Explore • Create • Learn • Innovate
+    </p>
+
+    <p>
+      © 2026 JAGANNATH CRAFATE
+    </p>
+
+  </footer>
+
+
+</body>
+
+  </html>
