@@ -1,0 +1,286 @@
+<style>
+.hover-img {
+  width: 300px;
+  transition: 0.5s;
+}
+
+.hover-img:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+</style>
+<style>
+.floating-img {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JAGANNATHCRAFATE - handcrafted Jagannath art, festival decor, school projects, models and custom craft orders.">
+  <meta name="theme-color" content="#7b1fa2">
+  <title>JAGANNATHCRAFATE | Handmade Art & Custom Craft</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <header class="site-header" id="home">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="JAGANNATHCRAFATE home">
+        <img src="logo.svg" alt="" class="brand-logo">
+        <span>JAGANNATH<span>CRAFATE</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#categories">Categories</a>
+        <a href="#school">School Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">HANDMADE • CREATIVE • CUSTOM</p>
+        <h1 class="animated-heading">Crafted with devotion.<br><span>Made with imagination.</span></h1>
+        <p class="hero-text">
+          Welcome to <strong>JAGANNATHCRAFATE</strong> — a creative handmade studio for
+          Jagannath-inspired art, festival decorations, school projects, models and personalised craft.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#categories">Explore Crafts</a>
+          <a class="btn secondary" href="#order">Place an Order</a>
+        </div>
+        <div class="trust-row">
+          <span>✦ Handmade</span><span>✦ Customised</span><span>✦ School-Friendly</span><span>✦ Order by Requirement</span>
+        </div>
+      </div>
+
+      <div class="idol-float-wrap">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="idol-card">
+          <div class="floating-badge">JAI JAGANNATH</div>
+          <figure><img src="https://github.com/user-attachments/assets/5d448923-2f1f-44c1-b482-83de52cec41a">
+          <div class="idol-caption">
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="marquee-strip" aria-label="Highlights">
+      <div>JAGANNATH ART ✦ SCHOOL PROJECTS ✦ FESTIVAL DECOR ✦ CUSTOM MODELS ✦ HANDMADE GIFTS ✦</div>
+    </section>
+
+    <section class="section container" id="categories">
+      <div class="section-title">
+        <p class="eyebrow">OUR COLLECTION</p>
+        <h2 class="animated-heading">Explore by <span>Category</span></h2>
+        <p>Choose a craft category and tell us what you need. We create according to your theme, class, size and presentation requirements.</p>
+      </div>
+
+      <div class="category-grid">
+        <article class="category-card">
+          <div class="icon">🛕</div><h3>Jagannath Art</h3>
+          <p>Handmade idols, paintings, wall art, temple-inspired displays and devotional craft.</p>
+          <a href="jagannath-art.html">✨ Click to Enter →</a>
+        </article>
+        <article class="category-card">
+          <div class="icon">🌺</div><h3>Festival Decor</h3>
+          <p>Creative festival cards, rangoli-style artwork, stage décor and themed displays.</p>
+          <a href="festival-decor.html">✨ Click to Enter →</a>
+        </article>
+        <article class="category-card">
+          <div class="icon">📚</div><h3>School Projects</h3>
+          <p>Models, charts, working models, 3D scenes and presentation-ready project work by class.</p>
+          <a href="school-project.html">✨ Click to Enter →</a>
+        </article>
+        <article class="category-card">
+          <div class="icon">🏞️</div><h3>3D Models & Dioramas</h3>
+          <p>Cardboard, paper, recycled-material and mixed-media models for exhibitions and displays.</p>
+          <a href="#order" data-category="3D Model / Diorama">Order this category →</a>
+        </article>
+        <article class="category-card">
+          <div class="icon">🏮</div><h3>Wall & Table Decor</h3>
+          <p>Lanterns, decorative panels, centrepieces and handcrafted pieces for special occasions.</p>
+          <a href="#order" data-category="Wall / Table Decor">Order this category →</a>
+        </article>
+        <article class="category-card">
+          <div class="icon">✨</div><h3>Custom Creation</h3>
+          <p>Have an idea? Share a reference photo or sketch and we will discuss the best craft approach.</p>
+          <a href="#order" data-category="Custom Creation">Start custom order →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section school-section" id="school">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">SPECIAL SCHOOL PROJECT DESK</p>
+          <h2 class="animated-heading">Projects arranged <span>by Class</span></h2>
+          <p>No public rates are displayed. Submit your requirements and receive a custom response based on the project type, size, material and deadline.</p>
+        </div>
+
+        <div class="class-tabs" role="tablist">
+          <button class="class-tab active" data-class="primary">Nursery–V</button>
+          <button class="class-tab" data-class="middle">VI–VIII</button>
+          <button class="class-tab" data-class="secondary">IX–X</button>
+          <button class="class-tab" data-class="senior">XI–XII</button>
+        </div>
+
+        <div class="class-panel active" id="panel-primary">
+          <div class="project-list">
+            <div>🎨 <strong>Charts & Posters</strong><span>Colourful, simple and child-friendly presentation.</span></div>
+            <div>🌱 <strong>EVS / Science Models</strong><span>Plants, water cycle, habitats, transport and environment.</span></div>
+            <div>🧩 <strong>Working & 3D Crafts</strong><span>Easy-to-understand models with neat finishing.</span></div>
+            <div>📖 <strong>Festival / Story Displays</strong><span>Theme-based creative display pieces.</span></div>
+          </div>
+        </div>
+
+        <div class="class-panel" id="panel-middle">
+          <div class="project-list">
+            <div>🔬 <strong>Science Models</strong><span>Working and static models with labelled parts.</span></div>
+            <div>🌍 <strong>SST / Geography Models</strong><span>Maps, landforms, settlements and cultural themes.</span></div>
+            <div>💻 <strong>Computer / AI Projects</strong><span>Concept displays, flow models and presentation boards.</span></div>
+            <div>📐 <strong>Maths Models</strong><span>Geometry, mensuration, data and activity-based models.</span></div>
+          </div>
+        </div>
+
+        <div class="class-panel" id="panel-secondary">
+          <div class="project-list">
+            <div>⚗️ <strong>Advanced Science Models</strong><span>Concept-focused models with accurate labelling.</span></div>
+            <div>🗺️ <strong>Geography & Political Science</strong><span>Maps, thematic boards and 3D representations.</span></div>
+            <div>📊 <strong>Maths & Data Projects</strong><span>Graphs, geometric constructions and activity displays.</span></div>
+            <div>🧠 <strong>Interdisciplinary Projects</strong><span>Integrated themes presented in an exhibition-ready format.</span></div>
+          </div>
+        </div>
+
+        <div class="class-panel" id="panel-senior">
+          <div class="project-list">
+            <div>🧪 <strong>Physics / Chemistry / Biology</strong><span>Model-based concept presentation and labelled displays.</span></div>
+            <div>📈 <strong>Economics / Business Studies</strong><span>Charts, working concepts and visual presentation.</span></div>
+            <div>🌐 <strong>Computer Science / AI</strong><span>System diagrams, conceptual models and display work.</span></div>
+            <div>🎓 <strong>Exhibition / Competition Projects</strong><span>Custom designs based on the competition brief.</span></div>
+          </div>
+        </div>
+
+        <div class="school-note">
+          <strong>For a better project order:</strong> mention class, subject, topic, school instructions, required size, working/static model, preferred materials, submission date and any reference image.
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="gallery">
+      <div class="section-title">
+        <p class="eyebrow">HANDMADE SHOWCASE</p>
+        <h2 class="animated-heading">Ideas that become <span>art</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <figure><img src="images/teej-festival-card.jpg" alt="Handmade Teej festival greeting card"><figcaption>Festival Greeting Craft</figcaption></figure>
+        <figure><img src="images/jagannath-stage-model.jpg" alt="Jagannath-themed handmade stage display"><figcaption>3D Stage Display</figcaption></figure>
+        <figure><img src="images/cardboard-craft-model.jpg" alt="Cardboard handmade model under construction"><figcaption>Cardboard Model Making</figcaption></figure>
+        <figure><img src="images/decorative-lanterns.jpg" alt="Handmade decorative lantern craft"><figcaption>Decorative Craft</figcaption></figure>
+        <figure><img src="images/jagannath-artwork.jpg" alt="Colourful Jagannath inspired artwork"><figcaption>Jagannath Artwork</figcaption></figure>
+        <figure><img src="images/jagannath-idols.jpg" alt="Handcrafted Jagannath trio display"><figcaption>Jagannath Trio</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section order-section" id="order">
+      <div class="container order-layout">
+        <div class="order-info">
+          <p class="eyebrow">CUSTOM ORDER</p>
+          <h2 class="animated-heading">Tell us what you <span>imagine</span></h2>
+          <p>Every project is different. Instead of showing fixed rates, we first understand your requirement and then discuss the suitable design, materials, size and delivery plan.</p>
+          <div class="steps">
+            <div><b>01</b><span><strong>Share details</strong><small>Fill the project/order form.</small></span></div>
+            <div><b>02</b><span><strong>Discuss design</strong><small>We clarify the concept and presentation.</small></span></div>
+            <div><b>03</b><span><strong>Confirm order</strong><small>Final details are agreed before making.</small></span></div>
+            <div><b>04</b><span><strong>Craft & deliver</strong><small>Your handmade creation is prepared.</small></span></div>
+          </div>
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <div class="form-row">
+            <label>Customer Name<input name="name" required placeholder="Enter your name"></label>
+            <label>Mobile Number<input name="mobile" required inputmode="tel" placeholder="Your mobile number"></label>
+          </div>
+          <div class="form-row">
+            <label>Email<input type="email" name="email" placeholder="Your email"></label>
+            <label>Order Category
+              <select name="category" id="categorySelect" required>
+                <option value="">Select category</option>
+                <option>Jagannath Art</option><option>Festival Decor</option><option>School Project</option>
+                <option>3D Model / Diorama</option><option>Wall / Table Decor</option><option>Custom Creation</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Class (if school project)
+              <select name="class">
+                <option value="">Not applicable</option>
+                <option>Nursery–V</option><option>VI–VIII</option><option>IX–X</option><option>XI–XII</option>
+              </select>
+            </label>
+            <label>Subject / Topic<input name="topic" placeholder="e.g. Science – Water Cycle"></label>
+          </div>
+          <div class="form-row">
+            <label>Required Size<input name="size" placeholder="e.g. A3 / 2 ft × 2 ft / as required"></label>
+            <label>Required By<input type="date" name="deadline"></label>
+          </div>
+          <label>Project / Order Details<textarea name="details" required rows="5" placeholder="Describe the design, material, working/static model, school instructions, colours, reference idea, etc."></textarea></label>
+          <label>Reference Image / File<input type="file" name="reference" accept="image/*,.pdf"></label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Order on WhatsApp</button>
+            <button class="btn secondary" type="button" id="emailOrder">Prepare Email</button>
+          </div>
+          <p class="form-note">For static GitHub hosting, the form opens your WhatsApp/email app with the order details. No payment or public rate information is stored on this page.</p>
+          <div class="success" id="formMessage" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">CONTACT JAGANNATHCRAFATE</p>
+          <h2 class="animated-heading">Let's create something <span>beautiful</span></h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="tel:+919012862109"><span>📞</span><strong>Call / Mobile</strong><small>9012862109</small></a>
+          <a class="contact-card" href="mailto:jitendra020608@gmail.com"><span>✉️</span><strong>Email</strong><small>jitendra020608@gmail.com</small></a>
+          <a class="contact-card" href="https://wa.me/919012862109?text=Hello%20JAGANNATHCRAFATE%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener"><span>💬</span><strong>WhatsApp</strong><small>Send an enquiry</small></a>
+          <div class="contact-card"><span>📍</span><strong>Address</strong><small>JHAJAR BYPASS Road, Dankaur, Gautam Buddha Nagar, Greater Noida, PIN 203201</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>JAGANNATHCRAFATE</strong><span>Handmade art • Custom craft • School projects</span></div>
+      <div>© <span id="year"></span> JAGANNATHCRAFATE. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/919012862109?text=Hello%20JAGANNATHCRAFATE%2C%20I%20want%20to%20enquire%20about%20a%20custom%20order." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ https://github.com/user-attachments/assets/1911ec7f-de2f-40a6-a96e-8500e858307d
+<video controls width="50%" playsinline>
+  <source src="jagannath-video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<img width="1254" height="1254" alt="Image" src="https://github.com/user-attachments/assets/5d448923-2f1f-44c1-b482-83de52cec41a" />
