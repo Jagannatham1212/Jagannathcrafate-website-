@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Physics Projects | JAGANNATHCRAFATE</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,0.15), transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255,255,255,0.12), transparent 25%),
+        linear-gradient(135deg, #08003d, #12006b, #001f5c, #003b70);
+    color: white;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    text-align: center;
+    padding: 35px 15px 25px;
+    position: relative;
+    z-index: 5;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: clamp(30px, 6vw, 60px);
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px #00eaff,
+                 0 0 30px #00eaff;
+}
+
+.header h2 {
+    margin: 10px 0;
+    color: #ffd700;
+    font-size: clamp(18px, 3vw, 28px);
+}
+
+.header p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* ================= BACK BUTTON ================= */
+
+.back-button {
+    display: inline-block;
+    margin: 10px auto 25px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff006e, #8338ec);
+    box-shadow: 0 0 15px rgba(255,0,110,0.6);
+    transition: 0.3s;
+    position: relative;
+    z-index: 10;
+}
+
+.back-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #ff4da6;
+}
+
+/* ================= FLOATING PHYSICS SYMBOLS ================= */
+
+.physics-symbol {
+    position: fixed;
+    font-size: 40px;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.p1 { left: 5%; top: 18%; animation-delay: 0s; }
+.p2 { left: 15%; top: 70%; animation-delay: 1s; }
+.p3 { right: 7%; top: 22%; animation-delay: 2s; }
+.p4 { right: 15%; top: 70%; animation-delay: 3s; }
+.p5 { left: 45%; top: 12%; animation-delay: 1.5s; }
+.p6 { right: 40%; top: 82%; animation-delay: 2.5s; }
+
+@keyframes float {
+    0%,100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(12deg);
+    }
+}
+
+/* ================= ORBIT ================= */
+
+.orbit {
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(0,238,255,0.5);
+    border-radius: 50%;
+    margin: 15px auto 30px;
+    position: relative;
+    animation: spin 8s linear infinite;
+}
+
+.orbit::before,
+.orbit::after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgba(255,215,0,0.5);
+    border-radius: 50%;
+    inset: 20px;
+    transform: rotate(60deg);
+}
+
+.orbit::after {
+    transform: rotate(-60deg);
+}
+
+.electron {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #00eaff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00eaff;
+    top: -7px;
+    left: 50%;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ================= PROJECT SECTION ================= */
+
+.projects {
+    width: 92%;
+    max-width: 1200px;
+    margin: 20px auto 60px;
+    position: relative;
+    z-index: 3;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffe600;
+    margin: 35px 0;
+    text-shadow: 0 0 12px rgba(255,230,0,0.7);
+}
+
+/* ================= PROJECT CARDS ================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    position: relative;
+    padding: 25px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(0,234,255,0.12);
+    top: -50px;
+    right: -40px;
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,238,255,0.35);
+}
+
+.icon {
+    font-size: 55px;
+    margin-bottom: 12px;
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.project-card h3 {
+    color: #00eaff;
+    font-size: 23px;
+    margin: 8px 0;
+}
+
+.project-card p {
+    line-height: 1.6;
+    color: #eeeeee;
+}
+
+/* ================= CLASS BUTTONS ================= */
+
+.class-section {
+    margin-top: 55px;
+}
+
+.class-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.class-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00b4d8, #0077b6);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.class-buttons a:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #ff006e, #8338ec);
+}
+
+/* ================= PHYSICS FORMULA BOX ================= */
+
+.formula-box {
+    margin: 50px auto;
+    max-width: 950px;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    background: rgba(0,0,0,0.25);
+    border: 2px solid rgba(0,234,255,0.4);
+    box-shadow: 0 0 25px rgba(0,234,255,0.15);
+}
+
+.formula-box h2 {
+    color: #ffd700;
+}
+
+.formulas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.formula {
+    padding: 15px 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.12);
+    font-size: 19px;
+    color: #ffffff;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: rgba(0,0,0,0.35);
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+footer strong {
+    color: #00eaff;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px) {
+
+    .header {
+        padding-top: 25px;
+    }
+
+    .header h1 {
+        letter-spacing: 1px;
+    }
+
+    .physics-symbol {
+        font-size: 28px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .orbit {
+        width: 120px;
+        height: 120px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING PHYSICS ICONS -->
+
+<div class="physics-symbol p1">⚛️</div>
+<div class="physics-symbol p2">🧲</div>
+<div class="physics-symbol p3">⚡</div>
+<div class="physics-symbol p4">🚀</div>
+<div class="physics-symbol p5">🔭</div>
+<div class="physics-symbol p6">🌌</div>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+<a href="school-project.html" class="back-button">
+    ⬅ Back to School Projects
+</a>
+
+<h1>⚛️ PHYSICS PROJECTS ⚡</h1>
+
+<h2>Explore • Experiment • Discover</h2>
+
+<p>
+Welcome to the Physics Project Laboratory of
+<strong>JAGANNATHCRAFATE</strong> —
+where scientific ideas become creative working models.
+</p>
+
+<!-- ATOM ORBIT -->
+
+<div class="orbit">
+    <div class="electron"></div>
+</div>
+
+</header>
+
+
+<!-- PROJECTS -->
+
+<section class="projects">
+
+<h2 class="section-title">🔬 Creative Physics Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<div class="icon">🧲</div>
+<h3>Magnetic Levitation</h3>
+<p>
+Explore magnetic forces by creating a simple
+levitation model and understand attraction,
+repulsion and magnetic fields.
+</p>
+</div>
+
+
+<div class="project-card">
+<div class="icon">⚡</div>
+<h3>Electricity Generator</h3>
+<p>
+Demonstrate how mechanical energy can be
+converted into electrical energy using a
+simple generator model.
+</p>
+</div>
+
+
+<div class="project-card">
+<div class="icon">🌈</div>
+<h3>Light & Spectrum</h3>
+<p>
+Study dispersion of white light and explore
+how different colours form a spectrum.
+</p>
+</div>
+
+
+<div class="project-card">
+<div class="icon">🚀</div>
+<h3>Rocket Propulsion</h3>
+<p>
+Understand Newton's third law through a safe
+model demonstrating action and reaction.
+</p>
+</div>
+
+
+<div class="project-card">
+<div class="icon">🔭</div>
+<h3>Solar System Model</h3>
+<p>
+Create a colourful astronomical model to
+understand planets, orbits and relative motion.
+</p>
+</div>
+
+
+<div class="project-card">
+<div class="icon">🌡️</div>
+<h3>Heat Transfer</h3>
+<p>
+Demonstrate conduction, convection and
+radiation through simple classroom models.
+</p>
+</div>
+
+
+<div class="project-card">
+<div class="icon">💡</div>
+<h3>Smart Street Light</h3>
+<p>
+Build a model showing automatic lighting
+using a light sensor and basic circuitry.
+</p>
+</div>
+
+
+<div class="project-card">
+<div class="icon">🔊</div>
+<h3>Sound Waves</h3>
+<p>
+Explore vibrations, frequency and sound
+propagation through an interactive model.
+</p>
+</div>
+
+</div>
+
+
+<!-- CLASS WISE SECTION -->
+
+<div class="class-section">
+
+<h2 class="section-title">
+📚 Class-Wise Physics Projects
+</h2>
+
+<div class="class-buttons">
+
+<a href="#">Class 6 Physics</a>
+<a href="#">Class 7 Physics</a>
+<a href="#">Class 8 Physics</a>
+<a href="#">Class 9 Physics</a>
+<a href="#">Class 10 Physics</a>
+
+</div>
+
+</div>
+
+
+<!-- FORMULAS -->
+
+<div class="formula-box">
+
+<h2>🧠 Physics Formula Corner</h2>
+
+<div class="formulas">
+
+<div class="formula">
+Speed = Distance ÷ Time
+</div>
+
+<div class="formula">
+Force = Mass × Acceleration
+</div>
+
+<div class="formula">
+Work = Force × Distance
+</div>
+
+<div class="formula">
+Power = Work ÷ Time
+</div>
+
+<div class="formula">
+Density = Mass ÷ Volume
+</div>
+
+<div class="formula">
+V = IR
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+<strong>JAGANNATHCRAFATE</strong>
+</p>
+
+<p>
+Creative School Projects • Science • Physics • Innovation
+</p>
+
+<p>
+© 2026 JAGANNATHCRAFATE SCHOOL CREATION
+</p>
+
+</footer>
+
+
+<!-- EXTRA FLOATING ANIMATION -->
+
+<script>
+
+const symbols = [
+    "⚛️","⚡","🧲","🔭","🚀","🌌",
+    "💡","🔬","🌈","🔋","📡","🛰️"
+];
+
+for(let i = 0; i < 12; i++){
+
+    const element = document.createElement("div");
+
+    element.className = "physics-symbol";
+
+    element.innerHTML =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    element.style.left =
+        Math.random() * 95 + "%";
+
+    element.style.top =
+        Math.random() * 90 + "%";
+
+    element.style.fontSize =
+        (20 + Math.random() * 25) + "px";
+
+    element.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+    element.style.animationDelay =
+        Math.random() * 4 + "s";
+
+    document.body.appendChild(element);
+}
+
+</script>
+
+</body>
+  </html>
