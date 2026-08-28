@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Creative Environment Science Projects - JAGANNATH CRAFATE">
+
+<meta name="keywords"
+content="environment projects, waste management, recycling, water conservation, pollution, school projects">
+
+<meta name="author"
+content="JAGANNATH CRAFATE">
+
+<title>Environment Projects | JAGANNATH CRAFATE</title>
+
+
+<style>
+
+/* =====================================
+   BASIC SETTINGS
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:
+Arial,
+Helvetica,
+sans-serif;
+
+background:
+linear-gradient(
+135deg,
+#e8fff1,
+#ffffff,
+#e5fff8
+);
+
+color:#214d38;
+
+line-height:1.6;
+
+overflow-x:hidden;
+}
+
+
+/* =====================================
+   MAIN ENVIRONMENT BACKGROUND
+===================================== */
+
+.environment-page{
+
+min-height:100vh;
+
+position:relative;
+
+overflow:hidden;
+
+background:
+
+radial-gradient(
+circle at 10% 15%,
+rgba(76,175,80,.15),
+transparent 25%
+),
+
+radial-gradient(
+circle at 90% 25%,
+rgba(0,150,136,.14),
+transparent 25%
+),
+
+radial-gradient(
+circle at 50% 90%,
+rgba(139,195,74,.12),
+transparent 30%
+),
+
+linear-gradient(
+135deg,
+#effff4,
+#ffffff,
+#edfff8
+);
+}
+
+
+/* =====================================
+   FLOATING ENVIRONMENT ICONS
+===================================== */
+
+.float-icon{
+
+position:fixed;
+
+z-index:1;
+
+font-size:36px;
+
+opacity:.45;
+
+pointer-events:none;
+
+animation:
+environmentFloat 6s ease-in-out infinite;
+}
+
+.float1{
+top:12%;
+left:4%;
+}
+
+.float2{
+top:25%;
+right:5%;
+
+animation-delay:1s;
+}
+
+.float3{
+top:48%;
+left:7%;
+
+animation-delay:2s;
+}
+
+.float4{
+top:68%;
+right:7%;
+
+animation-delay:3s;
+}
+
+.float5{
+top:40%;
+left:47%;
+
+animation-delay:1.5s;
+}
+
+.float6{
+top:83%;
+left:43%;
+
+animation-delay:2.5s;
+}
+
+
+@keyframes environmentFloat{
+
+0%,100%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+}
+
+50%{
+
+transform:
+translateY(-28px)
+rotate(8deg);
+
+}
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.environment-header{
+
+position:relative;
+
+z-index:2;
+
+overflow:hidden;
+
+text-align:center;
+
+color:white;
+
+padding:
+50px
+20px
+65px;
+
+background:
+
+linear-gradient(
+135deg,
+#087f23,
+#159947,
+#00897b
+);
+
+box-shadow:
+
+0 8px
+30px
+rgba(0,0,0,.20);
+}
+
+
+.environment-header::before{
+
+content:"🌳";
+
+position:absolute;
+
+font-size:180px;
+
+left:-35px;
+
+top:-60px;
+
+opacity:.08;
+}
+
+
+.environment-header::after{
+
+content:"♻️";
+
+position:absolute;
+
+font-size:170px;
+
+right:-35px;
+
+bottom:-55px;
+
+opacity:.08;
+}
+
+
+.environment-logo{
+
+font-size:68px;
+
+letter-spacing:8px;
+
+animation:
+logoFloat 3s ease-in-out infinite;
+}
+
+
+@keyframes logoFloat{
+
+0%,100%{
+
+transform:
+translateY(0);
+
+}
+
+50%{
+
+transform:
+translateY(-10px);
+
+}
+
+}
+
+
+.environment-header h1{
+
+font-size:
+clamp(
+32px,
+6vw,
+55px
+);
+
+letter-spacing:3px;
+
+margin:
+12px
+0;
+
+text-shadow:
+
+0 3px
+10px
+rgba(0,0,0,.25);
+}
+
+
+.environment-header p{
+
+max-width:850px;
+
+margin:auto;
+
+font-size:17px;
+
+line-height:1.8;
+
+opacity:.96;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.navigation{
+
+position:relative;
+
+z-index:5;
+
+text-align:center;
+
+padding:
+22px
+15px;
+}
+
+
+.nav-button{
+
+display:inline-block;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:bold;
+
+padding:
+12px
+23px;
+
+margin:5px;
+
+border-radius:30px;
+
+background:
+
+linear-gradient(
+45deg,
+#087f23,
+#00897b
+);
+
+box-shadow:
+
+0 6px
+18px
+rgba(0,0,0,.18);
+
+transition:
+all .3s ease;
+}
+
+
+.nav-button:hover{
+
+transform:
+translateY(-4px)
+scale(1.04);
+
+background:
+
+linear-gradient(
+45deg,
+#00897b,
+#43a047
+);
+}
+
+
+/* =====================================
+   EARTH ANIMATION
+===================================== */
+
+.earth-area{
+
+width:160px;
+
+height:160px;
+
+margin:
+25px
+auto;
+
+position:relative;
+}
+
+
+.earth{
+
+position:absolute;
+
+width:100px;
+
+height:100px;
+
+border-radius:50%;
+
+left:50%;
+
+top:50%;
+
+transform:
+translate(-50%,-50%);
+
+background:
+
+linear-gradient(
+135deg,
+#2196f3,
+#00acc1
+);
+
+box-shadow:
+
+0 0 20px
+rgba(0,188,212,.7),
+
+0 0 45px
+rgba(76,175,80,.35);
+
+overflow:hidden;
+}
+
+
+.earth::before{
+
+content:"";
+
+position:absolute;
+
+width:45px;
+
+height:30px;
+
+background:#43a047;
+
+border-radius:
+50%
+40%
+45%
+40%;
+
+left:15px;
+
+top:20px;
+
+transform:
+rotate(-15deg);
+}
+
+
+.earth::after{
+
+content:"";
+
+position:absolute;
+
+width:35px;
+
+height:25px;
+
+background:#66bb6a;
+
+border-radius:50%;
+
+right:12px;
+
+bottom:20px;
+
+transform:
+rotate(20deg);
+}
+
+
+.orbit{
+
+position:absolute;
+
+width:150px;
+
+height:55px;
+
+border:
+2px
+solid
+rgba(255,255,255,.6);
+
+border-radius:50%;
+
+left:50%;
+
+top:50%;
+
+transform:
+translate(-50%,-50%)
+rotate(-20deg);
+
+animation:
+orbitRotate 6s linear infinite;
+}
+
+
+.leaf{
+
+position:absolute;
+
+font-size:27px;
+
+right:0;
+
+top:15px;
+
+animation:
+leafFloat 3s ease-in-out infinite;
+}
+
+
+@keyframes orbitRotate{
+
+from{
+
+transform:
+translate(-50%,-50%)
+rotate(-20deg);
+
+}
+
+to{
+
+transform:
+translate(-50%,-50%)
+rotate(340deg);
+
+}
+
+}
+
+
+@keyframes leafFloat{
+
+0%,100%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+}
+
+50%{
+
+transform:
+translateY(-10px)
+rotate(12deg);
+
+}
+
+}
+
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.container{
+
+position:relative;
+
+z-index:2;
+
+width:92%;
+
+max-width:1150px;
+
+margin:auto;
+}
+
+
+.section-title{
+
+text-align:center;
+
+color:#087f23;
+
+font-size:31px;
+
+margin:
+38px
+0
+25px;
+}
+
+
+/* =====================================
+   PROJECT GRID
+===================================== */
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(
+auto-fit,
+minmax(250px,1fr)
+);
+
+gap:25px;
+}
+
+
+.project-card{
+
+position:relative;
+
+overflow:hidden;
+
+background:white;
+
+border-radius:23px;
+
+padding:27px;
+
+min-height:270px;
+
+box-shadow:
+
+0 8px
+26px
+rgba(0,0,0,.10);
+
+border-top:
+5px
+solid
+#43a047;
+
+transition:
+all .4s ease;
+}
+
+
+.project-card::before{
+
+content:"";
+
+position:absolute;
+
+width:110px;
+
+height:110px;
+
+border-radius:50%;
+
+background:
+rgba(76,175,80,.08);
+
+right:-40px;
+
+top:-40px;
+}
+
+
+.project-card:hover{
+
+transform:
+translateY(-10px)
+scale(1.02);
+
+box-shadow:
+
+0 18px
+40px
+rgba(0,120,70,.18);
+}
+
+
+.project-icon{
+
+font-size:53px;
+
+margin-bottom:12px;
+}
+
+
+.project-card h3{
+
+color:#087f23;
+
+font-size:21px;
+
+margin-bottom:10px;
+}
+
+
+.project-card p{
+
+color:#536b60;
+
+font-size:14px;
+
+line-height:1.75;
+}
+
+
+.view-button{
+
+display:inline-block;
+
+margin-top:16px;
+
+padding:
+10px
+19px;
+
+background:#087f23;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:25px;
+
+font-size:13px;
+
+font-weight:bold;
+
+transition:.3s;
+}
+
+
+.view-button:hover{
+
+background:#00897b;
+
+transform:
+scale(1.06);
+}
+
+
+/* =====================================
+   GREEN IDEA SECTION
+===================================== */
+
+.green-section{
+
+margin:
+50px
+auto;
+
+padding:
+35px
+25px;
+
+max-width:950px;
+
+text-align:center;
+
+background:white;
+
+border-radius:25px;
+
+box-shadow:
+
+0 8px
+28px
+rgba(0,0,0,.10);
+}
+
+
+.green-section h2{
+
+color:#087f23;
+
+font-size:28px;
+
+margin-bottom:12px;
+}
+
+
+.green-section p{
+
+max-width:800px;
+
+margin:auto;
+
+color:#596b62;
+
+line-height:1.8;
+}
+
+
+.green-icons{
+
+margin-top:22px;
+
+font-size:42px;
+
+letter-spacing:13px;
+
+animation:
+iconsMove 4s ease-in-out infinite;
+}
+
+
+@keyframes iconsMove{
+
+0%,100%{
+
+transform:
+translateY(0);
+}
+
+50%{
+
+transform:
+translateY(-7px);
+}
+
+}
+
+
+/* =====================================
+   ENVIRONMENT MISSION
+===================================== */
+
+.mission{
+
+max-width:1000px;
+
+margin:
+20px
+auto
+55px;
+
+padding:
+30px;
+
+background:
+
+linear-gradient(
+135deg,
+#f1fff4,
+#ffffff
+);
+
+border-radius:23px;
+
+box-shadow:
+
+0 8px
+25px
+rgba(0,0,0,.09);
+}
+
+
+.mission h2{
+
+text-align:center;
+
+color:#087f23;
+
+margin-bottom:15px;
+}
+
+
+.mission ul{
+
+list-style:none;
+
+max-width:850px;
+
+margin:auto;
+}
+
+
+.mission li{
+
+padding:
+9px
+0;
+
+border-bottom:
+1px
+solid
+#e2f0e6;
+
+color:#53675d;
+}
+
+
+.mission li:last-child{
+
+border-bottom:none;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+position:relative;
+
+z-index:2;
+
+margin-top:60px;
+
+padding:
+32px
+15px;
+
+background:#123c2b;
+
+color:white;
+
+text-align:center;
+}
+
+
+footer strong{
+
+font-size:21px;
+
+color:#9be7a5;
+}
+
+
+footer p{
+
+font-size:14px;
+
+margin:6px;
+
+opacity:.9;
+}
+
+
+/* =====================================
+   MOBILE DESIGN
+===================================== */
+
+@media(max-width:600px){
+
+.environment-logo{
+
+font-size:46px;
+
+letter-spacing:3px;
+}
+
+
+.environment-header h1{
+
+font-size:30px;
+}
+
+
+.environment-header p{
+
+font-size:14px;
+}
+
+
+.section-title{
+
+font-size:25px;
+}
+
+
+.project-card{
+
+padding:21px;
+
+min-height:auto;
+}
+
+
+.green-icons{
+
+font-size:31px;
+
+letter-spacing:6px;
+}
+
+
+.float-icon{
+
+font-size:27px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="environment-page">
+
+
+<!-- =====================================
+     FLOATING ICONS
+===================================== -->
+
+<div class="float-icon float1">🌿</div>
+
+<div class="float-icon float2">💧</div>
+
+<div class="float-icon float3">♻️</div>
+
+<div class="float-icon float4">🌎</div>
+
+<div class="float-icon float5">☀️</div>
+
+<div class="float-icon float6">🌱</div>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="environment-header">
+
+<div class="environment-logo">
+
+🌍 🌱 ♻️ 💧
+
+</div>
+
+
+<h1>
+
+ENVIRONMENT PROJECTS
+
+</h1>
+
+
+<p>
+
+Explore creative environmental projects
+about recycling, waste management,
+water conservation, renewable energy,
+pollution control and sustainable living.
+
+</p>
+
+
+<!-- EARTH ANIMATION -->
+
+<div class="earth-area">
+
+<div class="earth"></div>
+
+<div class="orbit"></div>
+
+<div class="leaf">🍃</div>
+
+</div>
+
+</header>
+
+
+<!-- =====================================
+     NAVIGATION
+===================================== -->
+
+<div class="navigation">
+
+
+<a href="science-project.html"
+class="nav-button">
+
+⬅ Back to Science Projects
+
+</a>
+
+
+<a href="school-project.html"
+class="nav-button">
+
+🚪 Exit to School Projects
+
+</a>
+
+
+</div>
+
+
+<!-- =====================================
+     PROJECTS
+===================================== -->
+
+<main class="container">
+
+
+<h2 class="section-title">
+
+🌱 Explore Environmental Projects
+
+</h2>
+
+
+<div class="project-grid">
+
+
+<!-- PROJECT 1 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🌊
+</div>
+
+<h3>
+Plastic Waste Flood Barrier
+</h3>
+
+<p>
+
+An educational model exploring how
+selected plastic waste can be reused
+in a conceptual flood-protection system
+while promoting responsible waste management.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 2 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+💧
+</div>
+
+<h3>
+Waste to Water
+</h3>
+
+<p>
+
+A model demonstrating basic water
+filtration, conservation and responsible
+management of resources.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+♻️
+</div>
+
+<h3>
+Food Waste Composting Tower
+</h3>
+
+<p>
+
+A creative composting concept showing
+how biodegradable kitchen waste can be
+converted into useful compost.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 4 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🌧️
+</div>
+
+<h3>
+Rainwater Harvesting
+</h3>
+
+<p>
+
+Demonstrate the collection and storage
+of rainwater and learn how water can
+be conserved for future use.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 5 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+☀️
+</div>
+
+<h3>
+Solar Energy Model
+</h3>
+
+<p>
+
+Explore how sunlight can be used as a
+renewable energy source through a simple
+educational model.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 6 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🌬️
+</div>
+
+<h3>
+Wind Energy Model
+</h3>
+
+<p>
+
+Learn how moving air can be used to
+demonstrate renewable energy generation
+through a school working model.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 7 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🗑️
+</div>
+
+<h3>
+Smart Waste Segregation
+</h3>
+
+<p>
+
+Create a model demonstrating the
+importance of separating different
+types of waste for better management
+and recycling.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 8 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🌳
+</div>
+
+<h3>
+Green City Model
+</h3>
+
+<p>
+
+Design a sustainable city combining
+green spaces, renewable energy,
+water conservation and responsible
+waste management.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 9 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🌫️
+</div>
+
+<h3>
+Air Pollution Awareness Model
+</h3>
+
+<p>
+
+An educational display explaining
+sources of air pollution and ways
+communities can reduce pollution.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 10 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🌱
+</div>
+
+<h3>
+Vertical Garden
+</h3>
+
+<p>
+
+A space-saving green-wall concept
+showing how plants can be incorporated
+into small urban spaces.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 11 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🔥
+</div>
+
+<h3>
+Clean Energy Awareness
+</h3>
+
+<p>
+
+Explore different renewable energy
+sources and their role in creating
+a more sustainable future.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+<!-- PROJECT 12 -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🌎
+</div>
+
+<h3>
+Climate Action Model
+</h3>
+
+<p>
+
+An educational model connecting
+energy use, waste reduction,
+green spaces and responsible
+environmental choices.
+
+</p>
+
+<a href="#"
+class="view-button">
+
+View Project →
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- =====================================
+     GREEN IDEA
+===================================== -->
+
+<section class="green-section">
+
+<h2>
+
+💚 Think Green • Act Green
+
+</h2>
+
+
+<p>
+
+Environmental science helps us understand
+how our actions affect the natural world.
+Small responsible choices such as reducing
+waste, conserving water, recycling suitable
+materials and protecting green spaces can
+support a healthier environment.
+
+</p>
+
+
+<div class="green-icons">
+
+🌱 💧 ♻️ 🌳 ☀️ 🌎
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     ENVIRONMENT MISSION
+===================================== -->
+
+<section class="mission">
+
+<h2>
+
+🌍 Our Environmental Mission
+
+</h2>
+
+
+<ul>
+
+
+<li>
+🌱 Encourage students to care for nature
+</li>
+
+
+<li>
+♻️ Promote responsible waste management
+</li>
+
+
+<li>
+💧 Encourage water conservation
+</li>
+
+
+<li>
+☀️ Introduce renewable-energy concepts
+</li>
+
+
+<li>
+🌳 Promote tree planting and green spaces
+</li>
+
+
+<li>
+🌎 Develop awareness of environmental challenges
+</li>
+
+
+<li>
+💡 Encourage students to design practical solutions
+</li>
+
+
+<li>
+🏆 Make environmental learning creative and practical
+</li>
+
+
+</ul>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+<strong>
+
+🌍 JAGANNATH CRAFATE
+
+</strong>
+
+
+<p>
+
+Environment • Sustainability • Innovation
+
+</p>
+
+
+<p>
+
+Reduce • Reuse • Recycle • Restore
+
+</p>
+
+
+<p>
+
+© 2026 JAGANNATH CRAFATE
+
+</p>
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+</html>
