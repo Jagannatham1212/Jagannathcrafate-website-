@@ -300,7 +300,106 @@
     }
 
 
-    .category-card:hover {
+    .category-card:hover/* =====================================
+   CLICKABLE CATEGORY CARDS
+===================================== */
+
+.category-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+
+/* Make entire card clickable */
+
+.category-link .category-card {
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* Enter button */
+
+.enter-category {
+  display: inline-block;
+
+  margin-top: 16px;
+
+  padding: 10px 19px;
+
+  background: #0066cc;
+
+  color: white;
+
+  border-radius: 25px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 4px 12px rgba(0,102,204,0.20);
+}
+
+
+/* Card hover */
+
+.category-link:hover .category-card {
+
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 38px rgba(0,102,204,0.18);
+}
+
+
+/* Button hover */
+
+.category-link:hover .enter-category {
+
+  background: #00a6a6;
+
+  transform: scale(1.06);
+
+  box-shadow:
+    0 5px 15px rgba(0,166,166,0.25);
+}
+
+
+/* Icon animation */
+
+.category-link:hover .category-icon {
+
+  transform:
+    scale(1.12)
+    rotate(5deg);
+}
+
+.category-icon {
+
+  transition:
+    transform 0.35s ease;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .enter-category {
+
+    padding: 9px 16px;
+
+    font-size: 12px;
+
+  }
+
+      } {
 
       transform: translateY(-9px);
 
@@ -1505,3 +1604,10 @@
 
   </html>
 <a href="school-project.html" class="back-button">
+<a href="science-project.html" class="nav-button">
+  ⬅ Back to Science Projects
+</a>
+
+<a href="school-project.html" class="nav-button">
+  🚪 Exit to School Projects
+</a>
