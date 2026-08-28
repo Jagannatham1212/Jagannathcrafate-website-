@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Creative Space and Astronomy Projects - JAGANNATH CRAFATE">
+
+<title>Space & Astronomy Projects | JAGANNATH CRAFATE</title>
+
+<style>
+
+/* ==============================
+   BASIC
+============================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#02051f;
+color:white;
+overflow-x:hidden;
+}
+
+
+/* ==============================
+   SPACE BACKGROUND
+============================== */
+
+.space-page{
+min-height:100vh;
+background:
+radial-gradient(circle at 15% 20%,#392080 0,transparent 25%),
+radial-gradient(circle at 85% 30%,#004b78 0,transparent 25%),
+radial-gradient(circle at 50% 90%,#35115f 0,transparent 30%),
+#02051f;
+}
+
+
+/* ==============================
+   FLOATING ICONS
+============================== */
+
+.float-icon{
+position:fixed;
+z-index:1;
+font-size:35px;
+opacity:.55;
+pointer-events:none;
+animation:spaceFloat 6s ease-in-out infinite;
+}
+
+.f1{
+top:12%;
+left:5%;
+}
+
+.f2{
+top:28%;
+right:6%;
+animation-delay:1s;
+}
+
+.f3{
+top:55%;
+left:8%;
+animation-delay:2s;
+}
+
+.f4{
+top:72%;
+right:8%;
+animation-delay:3s;
+}
+
+.f5{
+top:42%;
+left:48%;
+animation-delay:1.5s;
+}
+
+.f6{
+top:82%;
+left:45%;
+animation-delay:2.5s;
+}
+
+@keyframes spaceFloat{
+
+0%,100%{
+transform:translateY(0) rotate(0deg);
+}
+
+50%{
+transform:translateY(-30px) rotate(10deg);
+}
+
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.space-header{
+position:relative;
+z-index:2;
+text-align:center;
+padding:50px 20px 60px;
+background:
+linear-gradient(
+135deg,
+#03002e,
+#16005c,
+#003b68
+);
+box-shadow:0 8px 30px rgba(0,0,0,.5);
+overflow:hidden;
+}
+
+.space-logo{
+font-size:68px;
+letter-spacing:10px;
+animation:logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+.space-header h1{
+font-size:clamp(32px,6vw,58px);
+letter-spacing:3px;
+margin:12px 0;
+
+text-shadow:
+0 0 10px #00eaff,
+0 0 25px #00eaff;
+}
+
+.space-header p{
+max-width:850px;
+margin:auto;
+font-size:17px;
+line-height:1.8;
+color:#d8f8ff;
+}
+
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+.navigation{
+position:relative;
+z-index:5;
+text-align:center;
+padding:22px 15px;
+}
+
+.nav-button{
+display:inline-block;
+text-decoration:none;
+color:white;
+font-weight:bold;
+padding:12px 22px;
+margin:5px;
+
+border-radius:30px;
+
+background:
+linear-gradient(45deg,#4527a0,#0077cc);
+
+box-shadow:
+0 6px 18px rgba(0,0,0,.35);
+
+transition:.3s;
+}
+
+.nav-button:hover{
+transform:translateY(-4px) scale(1.04);
+
+background:
+linear-gradient(45deg,#0077cc,#00a6a6);
+}
+
+
+/* ==============================
+   PLANET ORBIT
+============================== */
+
+.orbit-area{
+width:180px;
+height:180px;
+margin:25px auto;
+position:relative;
+}
+
+.orbit-ring{
+position:absolute;
+inset:10px;
+border:2px solid rgba(0,234,255,.6);
+border-radius:50%;
+animation:orbitSpin 8s linear infinite;
+}
+
+.orbit-ring.two{
+inset:35px;
+border-color:rgba(255,215,0,.6);
+transform:rotate(60deg);
+}
+
+.planet{
+position:absolute;
+width:25px;
+height:25px;
+border-radius:50%;
+background:#00eaff;
+box-shadow:0 0 20px #00eaff;
+top:0;
+left:50%;
+}
+
+.sun{
+position:absolute;
+width:48px;
+height:48px;
+border-radius:50%;
+background:#ffd600;
+box-shadow:
+0 0 20px #ffd600,
+0 0 40px #ff9800;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+}
+
+@keyframes orbitSpin{
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+
+/* ==============================
+   MAIN
+============================== */
+
+.container{
+position:relative;
+z-index:2;
+
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+color:#00eaff;
+font-size:31px;
+margin:35px 0 25px;
+
+text-shadow:
+0 0 10px rgba(0,234,255,.5);
+}
+
+
+/* ==============================
+   PROJECT GRID
+============================== */
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(240px,1fr)
+);
+
+gap:24px;
+}
+
+.project-card{
+
+background:
+rgba(255,255,255,.08);
+
+border:
+1px solid rgba(255,255,255,.16);
+
+backdrop-filter:blur(10px);
+
+border-radius:23px;
+
+padding:26px;
+
+min-height:250px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.35);
+
+transition:.4s;
+
+position:relative;
+overflow:hidden;
+}
+
+.project-card::before{
+
+content:"";
+
+position:absolute;
+
+width:100%;
+height:5px;
+
+top:0;
+left:0;
+
+background:
+linear-gradient(
+90deg,
+#00eaff,
+#7c4dff,
+#ffd600
+);
+
+}
+
+.project-card:hover{
+
+transform:
+translateY(-10px)
+scale(1.02);
+
+box-shadow:
+0 18px 40px rgba(0,234,255,.22);
+}
+
+.project-icon{
+font-size:52px;
+margin-bottom:12px;
+}
+
+.project-card h3{
+color:#ffd740;
+font-size:21px;
+margin-bottom:10px;
+}
+
+.project-card p{
+color:#d7eaff;
+font-size:14px;
+line-height:1.7;
+}
+
+.view-button{
+
+display:inline-block;
+
+margin-top:16px;
+
+padding:10px 18px;
+
+background:#0077cc;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:25px;
+
+font-size:13px;
+
+font-weight:bold;
+
+transition:.3s;
+}
+
+.view-button:hover{
+
+background:#00a6a6;
+
+transform:scale(1.06);
+}
+
+
+/* ==============================
+   SPACE FACT BOX
+============================== */
+
+.space-facts{
+
+margin:50px auto;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:25px;
+
+background:
+rgba(255,255,255,.07);
+
+border:
+1px solid rgba(0,234,255,.3);
+
+}
+
+.space-facts h2{
+color:#ffd600;
+margin-bottom:15px;
+}
+
+.facts{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.fact{
+
+padding:14px 20px;
+
+background:
+rgba(255,255,255,.1);
+
+border-radius:18px;
+
+color:#dffaff;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer{
+
+margin-top:60px;
+
+padding:32px 15px;
+
+text-align:center;
+
+background:#010314;
+
+color:#bdefff;
+}
+
+footer strong{
+font-size:21px;
+color:#00eaff;
+}
+
+footer p{
+margin:6px;
+font-size:14px;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media(max-width:600px){
+
+.space-logo{
+font-size:46px;
+letter-spacing:3px;
+}
+
+.space-header h1{
+font-size:30px;
+}
+
+.space-header p{
+font-size:14px;
+}
+
+.section-title{
+font-size:25px;
+}
+
+.project-card{
+padding:21px;
+}
+
+.float-icon{
+font-size:27px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="space-page">
+
+
+<!-- ==============================
+     FLOATING SPACE ICONS
+============================== -->
+
+<div class="float-icon f1">🌙</div>
+<div class="float-icon f2">🛰️</div>
+<div class="float-icon f3">⭐</div>
+<div class="float-icon f4">🚀</div>
+<div class="float-icon f5">🌎</div>
+<div class="float-icon f6">🌌</div>
+
+
+<!-- ==============================
+     HEADER
+============================== -->
+
+<header class="space-header">
+
+<div class="space-logo">
+🚀 🌎 🌙 🔭
+</div>
+
+<h1>
+SPACE & ASTRONOMY
+</h1>
+
+<p>
+Explore planets, stars, satellites, galaxies,
+space missions and the fascinating mysteries
+of our universe through creative school projects.
+</p>
+
+
+<!-- ORBIT MODEL -->
+
+<div class="orbit-area">
+
+<div class="orbit-ring">
+<div class="planet"></div>
+</div>
+
+<div class="orbit-ring two"></div>
+
+<div class="sun"></div>
+
+</div>
+
+</header>
+
+
+<!-- ==============================
+     NAVIGATION
+============================== -->
+
+<div class="navigation">
+
+<a href="science-project.html"
+class="nav-button">
+
+⬅ Back to Science Projects
+
+</a>
+
+<a href="school-project.html"
+class="nav-button">
+
+🚪 Exit to School Projects
+
+</a>
+
+</div>
+
+
+<!-- ==============================
+     PROJECTS
+============================== -->
+
+<main class="container">
+
+<h2 class="section-title">
+🌌 Explore Space Projects
+</h2>
+
+
+<div class="project-grid">
+
+
+<div class="project-card">
+
+<div class="project-icon">☀️</div>
+
+<h3>Solar System Model</h3>
+
+<p>
+Create a colourful model of the Sun and planets
+to understand the arrangement and movement of
+objects in our Solar System.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<div class="project-icon">🌙</div>
+
+<h3>Moon Phases</h3>
+
+<p>
+Demonstrate how the Moon appears to change
+shape as its position relative to Earth and
+the Sun changes.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<div class="project-icon">🛰️</div>
+
+<h3>Artificial Satellite</h3>
+
+<p>
+Build an educational model explaining the
+purpose and basic components of artificial
+satellites.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<div class="project-icon">🚀</div>
+
+<h3>Space Exploration</h3>
+
+<p>
+Explore spacecraft, scientific missions and
+how humans use technology to study objects
+beyond Earth.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<div class="project-icon">🌍</div>
+
+<h3>Earth & Atmosphere</h3>
+
+<p>
+Create a model explaining Earth's layers,
+atmosphere and its importance for life.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<div class="project-icon">🌌</div>
+
+<h3>Galaxy Model</h3>
+
+<p>
+Create a visual representation of stars,
+galaxies and the enormous scale of the
+observable universe.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<div class="project-icon">🌑</div>
+
+<h3>Eclipse Model</h3>
+
+<p>
+Use a simple model to demonstrate the basic
+geometry behind solar and lunar eclipses.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<div class="project-icon">⭐</div>
+
+<h3>Star Life Cycle</h3>
+
+<p>
+Create a colourful educational display showing
+the broad stages in the life cycle of stars.
+</p>
+
+<a href="#" class="view-button">
+View Project →
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- ==============================
+     FACTS
+============================== -->
+
+<section class="space-facts">
+
+<h2>
+🧠 Space Explorer Corner
+</h2>
+
+<div class="facts">
+
+<div class="fact">
+🌎 Earth is our home planet
+</div>
+
+<div class="fact">
+🌙 The Moon orbits Earth
+</div>
+
+<div class="fact">
+☀️ The Sun is a star
+</div>
+
+<div class="fact">
+🛰️ Satellites support many technologies
+</div>
+
+<div class="fact">
+🔭 Telescopes help us study distant objects
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+
+<footer>
+
+<strong>
+🚀 JAGANNATH CRAFATE
+</strong>
+
+<p>
+Space • Astronomy • Innovation • Exploration
+</p>
+
+<p>
+Explore • Create • Learn • Discover
+</p>
+
+<p>
+© 2026 JAGANNATH CRAFATE
+</p>
+
+</footer>
+
+
+</div>
+
+</body>
+
+</html>
