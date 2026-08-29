@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Computer & AI Projects</title>
+
+<style>
+
+* {
+ box-sizing:border-box;
+}
+
+body {
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:
+ radial-gradient(circle at top,#101b45,#050714 60%,#101c3d);
+ color:white;
+ overflow-x:hidden;
+}
+
+.hero {
+ text-align:center;
+ padding:70px 20px;
+ position:relative;
+ overflow:hidden;
+ border-bottom:2px solid rgba(255,255,255,.15);
+}
+
+.ai {
+ font-size:100px;
+ animation:aiPulse 2s infinite;
+}
+
+@keyframes aiPulse {
+ 50% {
+  transform:scale(1.12);
+  filter:drop-shadow(0 0 25px #00e5ff);
+ }
+}
+
+.hero h1 {
+ font-size:clamp(38px,7vw,70px);
+ background:linear-gradient(90deg,#00e5ff,#b388ff,#ff80ab);
+ -webkit-background-clip:text;
+ color:transparent;
+}
+
+.hero p {
+ color:#b9c7ff;
+ font-size:19px;
+}
+
+.orb {
+ position:fixed;
+ width:100px;
+ height:100px;
+ border-radius:50%;
+ background:rgba(0,229,255,.08);
+ filter:blur(2px);
+ animation:orb 8s infinite alternate;
+}
+
+.o1 {left:3%;top:20%}
+.o2 {right:4%;bottom:15%;animation-delay:2s}
+
+@keyframes orb {
+ to {
+  transform:translate(50px,-80px) scale(1.5);
+ }
+}
+
+.container {
+ width:min(1200px,92%);
+ margin:45px auto;
+}
+
+.grid {
+ display:grid;
+ grid-template-columns:
+ repeat(auto-fit,minmax(240px,1fr));
+ gap:25px;
+}
+
+.card {
+ min-height:260px;
+ padding:28px;
+ text-align:center;
+ border-radius:25px;
+ background:rgba(255,255,255,.07);
+ border:1px solid rgba(255,255,255,.15);
+ backdrop-filter:blur(12px);
+ transition:.4s;
+}
+
+.card:hover {
+ transform:translateY(-12px) rotateX(5deg);
+ box-shadow:0 0 30px rgba(0,229,255,.2);
+}
+
+.icon {
+ font-size:65px;
+ animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+ 50% {transform:translateY(-10px)}
+}
+
+.card h2 {
+ color:#00e5ff;
+}
+
+.card p {
+ color:#cbd3f5;
+ line-height:1.6;
+}
+
+.back {
+ display:inline-block;
+ margin:40px;
+ padding:14px 30px;
+ border:1px solid #00e5ff;
+ color:#00e5ff;
+ text-decoration:none;
+ border-radius:30px;
+ transition:.3s;
+}
+
+.back:hover {
+ background:#00e5ff;
+ color:#06101d;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="orb o1"></div>
+<div class="orb o2"></div>
+
+<section class="hero">
+
+<div class="ai">🤖</div>
+
+<h1>Computer & AI</h1>
+
+<p>
+Code • Create • Automate • Imagine the Future
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🤖</div>
+<h2>Artificial Intelligence</h2>
+<p>
+AI concepts, smart systems,
+machine learning and future technology.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💻</div>
+<h2>Computer Science</h2>
+<p>
+Hardware, software, operating systems
+and computer networks.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🧠</div>
+<h2>Machine Learning</h2>
+<p>
+Simple student-friendly models showing
+how machines learn from information.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🔐</div>
+<h2>Cyber Safety</h2>
+<p>
+Digital safety, passwords, privacy
+and responsible internet use.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🔀</div>
+<h2>Flowcharts</h2>
+<p>
+Algorithms, decision making,
+logic and programming flowcharts.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🌐</div>
+<h2>Future Technology</h2>
+<p>
+Robotics, smart cities, IoT,
+automation and emerging technologies.
+</p>
+</div>
+
+</div>
+
+<center>
+<a href="school-project.html" class="back">
+← Back to Projects
+</a>
+</center>
+
+</div>
+
+</body>
+</html>
