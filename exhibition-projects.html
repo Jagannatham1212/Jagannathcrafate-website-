@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Exhibition Projects</title>
+
+<style>
+
+* {
+ box-sizing:border-box;
+}
+
+body {
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:
+ linear-gradient(135deg,#fff8e1,#f3e5f5,#e3f2fd);
+ color:#222;
+}
+
+.hero {
+ text-align:center;
+ padding:70px 20px;
+ color:white;
+ background:
+ linear-gradient(135deg,#e65100,#c62828,#6a1b9a);
+ position:relative;
+ overflow:hidden;
+}
+
+.hero h1 {
+ font-size:clamp(38px,7vw,70px);
+}
+
+.trophy {
+ font-size:100px;
+ animation:trophy 3s infinite ease-in-out;
+}
+
+@keyframes trophy {
+ 50% {
+  transform:translateY(-15px) rotate(5deg) scale(1.1);
+ }
+}
+
+.star {
+ position:absolute;
+ font-size:35px;
+ animation:star 5s infinite;
+}
+
+.st1 {left:7%;top:20%}
+.st2 {right:8%;top:25%;animation-delay:1s}
+.st3 {left:20%;bottom:10%;animation-delay:2s}
+
+@keyframes star {
+ 50% {
+  transform:translateY(-40px) rotate(180deg);
+ }
+}
+
+.container {
+ width:min(1200px,92%);
+ margin:45px auto;
+}
+
+.grid {
+ display:grid;
+ grid-template-columns:
+ repeat(auto-fit,minmax(240px,1fr));
+ gap:25px;
+}
+
+.card {
+ min-height:270px;
+ padding:30px;
+ text-align:center;
+ border-radius:25px;
+ background:rgba(255,255,255,.95);
+ box-shadow:0 15px 35px rgba(0,0,0,.13);
+ transition:.4s;
+}
+
+.card:hover {
+ transform:
+ perspective(700px)
+ rotateX(5deg)
+ rotateY(-5deg)
+ translateY(-12px);
+}
+
+.icon {
+ font-size:65px;
+ animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+ 50% {transform:translateY(-12px)}
+}
+
+.card h2 {
+ color:#e65100;
+}
+
+.card p {
+ color:#555;
+ line-height:1.6;
+}
+
+.badge {
+ display:inline-block;
+ padding:6px 12px;
+ background:#fff3e0;
+ color:#e65100;
+ border-radius:20px;
+ font-size:12px;
+ font-weight:bold;
+}
+
+.back {
+ display:inline-block;
+ margin:40px;
+ padding:14px 30px;
+ background:#e65100;
+ color:white;
+ text-decoration:none;
+ border-radius:30px;
+ font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="star st1">⭐</div>
+<div class="star st2">✨</div>
+<div class="star st3">🏅</div>
+
+<div class="trophy">🏆</div>
+
+<h1>Exhibition Projects</h1>
+
+<p>
+Innovate • Build • Demonstrate • Inspire
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🔬</div>
+<span class="badge">SCIENCE</span>
+<h2>Working Models</h2>
+<p>
+Interactive science models demonstrating
+real-world scientific principles.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🌍</div>
+<span class="badge">ENVIRONMENT</span>
+<h2>Green Innovation</h2>
+<p>
+Waste management, renewable energy,
+water conservation and sustainability.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🤖</div>
+<span class="badge">TECHNOLOGY</span>
+<h2>AI & Robotics</h2>
+<p>
+Robotics, artificial intelligence,
+automation and smart technology.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💧</div>
+<span class="badge">SOCIAL IMPACT</span>
+<h2>Problem Solving</h2>
+<p>
+Innovative models designed to solve
+real community and environmental problems.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⚡</div>
+<span class="badge">ENERGY</span>
+<h2>Future Energy</h2>
+<p>
+Solar energy, wind power,
+electricity and sustainable technology.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🏅</div>
+<span class="badge">COMPETITION</span>
+<h2>National-Level Ideas</h2>
+<p>
+Creative, practical and presentable
+projects suitable for exhibitions and competitions.
+</p>
+</div>
+
+</div>
+
+<center>
+<a href="school-project.html" class="back">
+← Back to Projects
+</a>
+</center>
+
+</div>
+
+</body>
+</html>
