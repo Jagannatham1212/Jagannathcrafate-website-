@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Charts & Posters</title>
+
+<style>
+
+* {
+ box-sizing:border-box;
+}
+
+body {
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:
+ linear-gradient(120deg,#fff1f8,#fffbe6,#e9faff);
+ color:#222;
+}
+
+.hero {
+ text-align:center;
+ padding:65px 20px;
+ background:
+ linear-gradient(135deg,#ff4081,#ff8f00,#7c4dff);
+ color:white;
+ position:relative;
+ overflow:hidden;
+}
+
+.hero h1 {
+ font-size:clamp(38px,7vw,70px);
+}
+
+.paint {
+ font-size:90px;
+ animation:paint 4s infinite ease-in-out;
+}
+
+@keyframes paint {
+ 50% {
+  transform:rotate(-10deg) translateY(-15px);
+ }
+}
+
+.shape {
+ position:absolute;
+ font-size:40px;
+ animation:shapeFloat 6s infinite;
+ opacity:.6;
+}
+
+.s1 {left:5%;top:20%}
+.s2 {right:7%;top:30%;animation-delay:2s}
+.s3 {left:20%;bottom:10%;animation-delay:1s}
+
+@keyframes shapeFloat {
+ 50% {
+  transform:translateY(-40px) rotate(30deg);
+ }
+}
+
+.container {
+ width:min(1200px,92%);
+ margin:45px auto;
+}
+
+.grid {
+ display:grid;
+ grid-template-columns:
+ repeat(auto-fit,minmax(240px,1fr));
+ gap:25px;
+}
+
+.card {
+ background:white;
+ padding:30px;
+ min-height:250px;
+ border-radius:22px;
+ text-align:center;
+ box-shadow:0 12px 30px rgba(0,0,0,.12);
+ transition:.4s;
+}
+
+.card:hover {
+ transform:rotate(-2deg) scale(1.04);
+}
+
+.icon {
+ font-size:65px;
+ animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+ 50% {transform:translateY(-12px)}
+}
+
+.card h2 {
+ color:#d81b60;
+}
+
+.card p {
+ color:#555;
+ line-height:1.6;
+}
+
+.back {
+ display:inline-block;
+ margin:40px;
+ padding:14px 30px;
+ background:#d81b60;
+ color:white;
+ text-decoration:none;
+ border-radius:30px;
+ font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="shape s1">✏️</div>
+<div class="shape s2">⭐</div>
+<div class="shape s3">🖌️</div>
+
+<div class="paint">🎨</div>
+
+<h1>Charts & Posters</h1>
+
+<p>
+Imagine • Design • Present • Inspire
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">📚</div>
+<h2>Educational Charts</h2>
+<p>
+Science, Maths, English, SST and
+general awareness learning charts.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🌱</div>
+<h2>Environment Posters</h2>
+<p>
+Climate action, pollution,
+water conservation and biodiversity.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🇮🇳</div>
+<h2>National Themes</h2>
+<p>
+Indian heritage, national days,
+great personalities and achievements.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🧠</div>
+<h2>Mind Maps</h2>
+<p>
+Visual learning using colourful
+mind maps and concept diagrams.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💡</div>
+<h2>Awareness Posters</h2>
+<p>
+Road safety, cyber safety,
+health awareness and social issues.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h2>Creative Displays</h2>
+<p>
+3D charts, interactive boards,
+pop-up designs and innovative displays.
+</p>
+</div>
+
+</div>
+
+<center>
+<a href="school-project.html" class="back">
+← Back to Projects
+</a>
+</center>
+
+</div>
+
+</body>
+</html>
