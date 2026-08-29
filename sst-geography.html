@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SST & Geography Projects</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top,#b8f2ff,#eefcff 45%,#d7f6df);
+  color: #123;
+  overflow-x: hidden;
+}
+
+/* Floating objects */
+
+.float {
+  position: fixed;
+  font-size: 35px;
+  opacity: 0.55;
+  animation: floatAround 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+.f1 { left: 5%; top: 18%; }
+.f2 { right: 8%; top: 25%; animation-delay: 2s; }
+.f3 { left: 12%; bottom: 15%; animation-delay: 4s; }
+.f4 { right: 15%; bottom: 20%; animation-delay: 1s; }
+
+@keyframes floatAround {
+  0%,100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(15deg);
+  }
+}
+
+.hero {
+  min-height: 330px;
+  padding: 70px 20px;
+  text-align: center;
+  position: relative;
+  background:
+    linear-gradient(135deg,
+    #00695c,
+    #00acc1,
+    #43a047);
+  color: white;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: clamp(35px,7vw,65px);
+  margin: 10px;
+  text-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.hero p {
+  font-size: 19px;
+}
+
+.globe {
+  font-size: 100px;
+  animation: globeSpin 12s linear infinite;
+}
+
+@keyframes globeSpin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.container {
+  width: min(1200px,92%);
+  margin: 40px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(240px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,.9);
+  padding: 28px;
+  border-radius: 25px;
+  text-align: center;
+  min-height: 240px;
+  box-shadow: 0 15px 30px rgba(0,0,0,.13);
+  transition: .4s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform:
+    perspective(700px)
+    rotateX(6deg)
+    rotateY(-6deg)
+    translateY(-10px);
+}
+
+.card-icon {
+  font-size: 60px;
+}
+
+.card h2 {
+  color: #00796b;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.back {
+  display: inline-block;
+  margin: 20px 0 50px;
+  padding: 14px 28px;
+  background: #00695c;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.back:hover {
+  transform: scale(1.08);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="float f1">🗺️</div>
+<div class="float f2">🧭</div>
+<div class="float f3">🏔️</div>
+<div class="float f4">🏛️</div>
+
+<section class="hero">
+
+<div class="globe">🌍</div>
+
+<h1>SST & Geography</h1>
+
+<p>
+Explore Earth • Maps • Culture • History • Landforms
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="project-grid">
+
+<div class="card">
+<div class="card-icon">🌋</div>
+<h2>Landform Models</h2>
+<p>
+Mountains, volcanoes, plateaus, valleys,
+islands and deserts.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🗺️</div>
+<h2>3D Maps</h2>
+<p>
+Creative physical maps, relief maps,
+thematic maps and terrain models.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🏛️</div>
+<h2>Indian Heritage</h2>
+<p>
+Monuments, historical places and
+Indian cultural heritage models.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🌱</div>
+<h2>Human Environment</h2>
+<p>
+Settlements, agriculture, transportation
+and sustainable communities.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🌊</div>
+<h2>Water Resources</h2>
+<p>
+Rivers, dams, rainwater harvesting
+and water conservation models.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🌪️</div>
+<h2>Natural Disasters</h2>
+<p>
+Earthquakes, cyclones, floods,
+droughts and disaster management.
+</p>
+</div>
+
+</div>
+
+<center>
+<a href="school-project.html" class="back">
+← Back to Projects
+</a>
+</center>
+
+</div>
+
+</body>
+</html>
