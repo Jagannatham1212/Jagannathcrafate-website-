@@ -335,7 +335,7 @@
           </p>
         </div>
 
-      </div>
+  </div>
 
       <!-- Buttons -->
 
@@ -360,3 +360,66 @@
 <img width="400" height="400" alt="Image" src="https://github.com/user-attachments/assets/83a148f3-bd15-4233-b1b5-e3b9adb91c9a" />
 <img width="400" height="600" alt="Image" src="https://github.com/user-attachments/assets/8a6ca5a7-29fa-439e-a818-f596ff92d120" />
 <a href="science-project.html" class="project-link">
+<style>
+
+.project-box {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 22px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #ffffff, #eef3ff);
+  box-shadow:
+    0 12px 25px rgba(0,0,0,0.12),
+    inset 0 1px 1px rgba(255,255,255,0.8);
+  transition: 0.4s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.20);
+}
+
+.project-icon {
+  font-size: 55px;
+  margin-bottom: 12px;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+  0%,100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(4deg);
+  }
+}
+
+.project-box h3 {
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.project-box p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.enter-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(135deg,#6a11cb,#2575fc);
+  box-shadow: 0 8px 18px rgba(37,117,252,0.35);
+  transition: 0.3s;
+}
+
+.enter-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(37,117,252,0.5);
+}
+
+  </style>
