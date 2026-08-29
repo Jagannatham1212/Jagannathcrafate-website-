@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maths Projects</title>
+
+<style>
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:
+  linear-gradient(135deg,#fff7e6,#eef2ff,#e9fff7);
+  color:#222;
+  overflow-x:hidden;
+}
+
+.hero {
+  padding:65px 20px;
+  text-align:center;
+  color:white;
+  background:
+  linear-gradient(135deg,#4527a0,#1565c0,#00838f);
+  position:relative;
+  overflow:hidden;
+}
+
+.hero h1 {
+  font-size:clamp(40px,7vw,70px);
+  margin:10px;
+}
+
+.math-symbol {
+  position:absolute;
+  font-size:45px;
+  opacity:.3;
+  animation:mathFloat 7s infinite ease-in-out;
+}
+
+.m1 {left:8%;top:20%}
+.m2 {right:10%;top:25%;animation-delay:2s}
+.m3 {left:20%;bottom:5%;animation-delay:3s}
+.m4 {right:25%;bottom:8%;animation-delay:1s}
+
+@keyframes mathFloat {
+  50% {
+    transform:translateY(-35px) rotate(20deg);
+  }
+}
+
+.big-number {
+  font-size:90px;
+  animation:numberSpin 5s infinite ease-in-out;
+}
+
+@keyframes numberSpin {
+  50% {
+    transform:rotateY(180deg) scale(1.1);
+  }
+}
+
+.container {
+  width:min(1200px,92%);
+  margin:40px auto;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+}
+
+.card {
+  padding:30px;
+  min-height:250px;
+  text-align:center;
+  border-radius:28px;
+  background:white;
+  box-shadow:0 15px 35px rgba(0,0,0,.12);
+  transition:.4s;
+  transform-style:preserve-3d;
+}
+
+.card:hover {
+  transform:
+  perspective(700px)
+  rotateX(8deg)
+  rotateY(8deg)
+  translateY(-12px);
+}
+
+.icon {
+  font-size:65px;
+  animation:bounce 3s infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform:translateY(-12px);
+  }
+}
+
+.card h2 {
+  color:#4527a0;
+}
+
+.card p {
+  color:#555;
+  line-height:1.6;
+}
+
+.back {
+  display:inline-block;
+  margin:35px;
+  padding:14px 28px;
+  background:#4527a0;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="math-symbol m1">π</div>
+<div class="math-symbol m2">√</div>
+<div class="math-symbol m3">∑</div>
+<div class="math-symbol m4">∞</div>
+
+<div class="big-number">📐</div>
+
+<h1>Maths Projects</h1>
+
+<p>
+Think • Calculate • Design • Discover
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">📐</div>
+<h2>Geometry Lab</h2>
+<p>
+Creative models of angles, triangles,
+circles, polygons and 3D shapes.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">📏</div>
+<h2>Mensuration</h2>
+<p>
+Area, perimeter, volume and surface
+area through working models.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">📊</div>
+<h2>Data Handling</h2>
+<p>
+Graphs, surveys, pictographs,
+bar graphs and real-life data.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🔢</div>
+<h2>Number World</h2>
+<p>
+Prime numbers, fractions, integers,
+patterns and number systems.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🧩</div>
+<h2>Maths Puzzles</h2>
+<p>
+Logical puzzles, mathematical games
+and brain-training activities.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🏗️</div>
+<h2>Maths in Real Life</h2>
+<p>
+Architecture, construction,
+shopping, budgeting and design.
+</p>
+</div>
+
+</div>
+
+<center>
+<a href="school-project.html" class="back">
+← Back to Projects
+</a>
+</center>
+
+</div>
+
+</body>
+  </html>
